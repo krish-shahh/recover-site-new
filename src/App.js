@@ -96,7 +96,7 @@ import Hero from "components/hero/TwoColumnWithInput.js";
 // import PricingPage from "pages/Pricing.js";
 import AboutUsPage from "pages/AboutUs.js";
 // import ContactUsPage from "pages/ContactUs.js";
-// import BlogIndexPage from "pages/BlogIndex.js";
+import BlogIndexPage from "pages/BlogIndex.js";
 // import TermsOfServicePage from "pages/TermsOfService.js";
 // import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 
@@ -121,6 +121,7 @@ export default function App() {
           <Route path="/" element={<MainLandingPage />} />
           <Route path='/about' element={<AboutUsPage />} />
           <Route path="/header" element={<Hero />} />
+          <Route path='/resources' element={<BlogIndexPage />} />
         </Routes>
       </Router>
     </>
