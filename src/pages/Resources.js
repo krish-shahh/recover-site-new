@@ -22,13 +22,13 @@ const PostContainer = styled.div`
         ${tw`sm:flex-row! h-full sm:pr-4`}
       }
       ${Image} {
-        ${tw`sm:h-96 sm:min-h-full sm:w-1/2 lg:w-1/2 sm:rounded-t-none sm:rounded-l-lg`}
+        ${tw`sm:h-96 sm:min-h-full sm:w-1/2 lg:w-1/3 sm:rounded-t-none sm:rounded-l-lg`}
       }
       ${Info} {
         ${tw`sm:-mr-4 sm:pl-8 sm:flex-1 sm:rounded-none sm:rounded-r-lg sm:border-t-2 sm:border-l-0`}
       }
       ${Description} {
-        ${tw`text-sm mt-3 leading-loose text-gray-600 font-medium`}
+        ${tw`text-lg mt-3 leading-loose text-gray-600 font-medium`}
       }
     `}
 `;
@@ -38,9 +38,9 @@ const Image = styled.div`
   ${tw`h-64 w-full bg-cover bg-center rounded-t-lg`}
 `;
 const Info = tw.div`p-8 border-2 border-t-0 rounded-lg rounded-t-none`;
-const Category = tw.div`uppercase text-primary-500 text-xs font-bold tracking-widest leading-loose after:content after:block after:border-b-2 after:border-primary-500 after:w-8`;
+const Category = tw.div`uppercase text-primary-500 text-xs font-bold tracking-widest leading-loose `;
 const CreationDate = tw.div`mt-4 uppercase text-gray-600 italic font-semibold text-xs`;
-const Title = tw.div`mt-1 font-black text-2xl text-gray-900 group-hover:text-primary-500 transition duration-300`;
+const Title = tw.div`mt-1 font-black text-4xl text-gray-900 group-hover:text-primary-500 transition duration-300`;
 const Description = tw.div``;
 
 const ButtonContainer = tw.div`flex justify-center`;
@@ -51,33 +51,70 @@ export default ({
     posts = [
         {
             imageSrc:
-                "https://images.unsplash.com/photo-1499678329028-101435549a4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80",
-            category: "Travel Tips",
-            date: "April 21, 2020",
-            title: "Safely Travel in Foreign Countries",
+                "https://www.arkbh.com/wp-content/uploads/2021/08/aaaaa_logo-1024x575.jpg",
+            // category: "Travel Tips",
+            // date: "April 21, 2020",
+            title: "Alcoholics Anonymous",
             description:
-                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            url: "https://timerse.com",
+                "Alcoholics Anonymous is an international fellowship of men and women who have had a drinking problem. It is nonprofessional, self-supporting, multiracial, apolitical, and available almost everywhere. There are no age or education requirements. Membership is open to anyone who wants to do something about his or her drinking problem.",
+            url: "https://www.aa.org/",
             featured: true
         },
-        getPlaceholderPost(),
-        getPlaceholderPost(),
-        getPlaceholderPost(),
-        getPlaceholderPost(),
-        getPlaceholderPost(),
-        getPlaceholderPost(),
-        getPlaceholderPost(),
-        getPlaceholderPost(),
-        getPlaceholderPost(),
-        getPlaceholderPost(),
-        getPlaceholderPost(),
-        getPlaceholderPost(),
-        getPlaceholderPost(),
-        getPlaceholderPost(),
-        getPlaceholderPost(),
-        getPlaceholderPost(),
-        getPlaceholderPost(),
-        getPlaceholderPost()
+        {
+            imageSrc:
+                "https://studentlife.tamu.edu/wp-content/uploads/2022/08/SMART-Recovery-Vertical-Logo.png",
+            // category: "Travel Tips",
+            // date: "April 21, 2020",
+            title: "SMART Recovery",
+            description:
+                "SMART Recovery aims to support individuals who have chosen to abstain, or are considering abstinence from any type of addictive behaviors (substances or activities), by teaching how to change self-defeating thinking, emotions, and actions; and to work towards long-term satisfactions and quality of life.",
+            url: "https://www.smartrecovery.org/",
+            featured: true
+        },
+        {
+            imageSrc:
+                "https://bearchurch.org/wp-content/uploads/2019/12/celebraterecovery_960x540.jpg",
+            // category: "Travel Tips",
+            // date: "April 21, 2020",
+            title: "Celebrate Recovery",
+            description:
+                "Celebrate Recovery is a Christ-centered, 12 step recovery program for anyone struggling with hurt, pain or addiction of any kind. Celebrate Recovery is a safe place to find community and freedom from the issues that are controlling our life.",
+            url: "https://www.celebraterecovery.com/",
+            featured: true
+        },
+        {
+            imageSrc:
+                "https://images-na.ssl-images-amazon.com/images/S/amzn-author-media-prod/6uigqinhlp68hvthhs0e472kah.jpg",
+            // category: "Travel Tips",
+            // date: "April 21, 2020",
+            title: "Al‑Anon",
+            description:
+                "Al‑Anon is a mutual support program for people whose lives have been affected by someone else’s drinking. By sharing common experiences and applying the Al-Anon principles, families and friends of alcoholics can bring positive changes to their individual situations, whether or not the alcoholic admits the existence of a drinking problem or seeks help.",
+            url: "https://al-anon.org/",
+            featured: true
+        },
+        {
+            imageSrc:
+                "https://lifering.org/wp-content/uploads/2022/04/LifeRing-Dubloon.jpg",
+            // category: "Travel Tips",
+            // date: "April 21, 2020",
+            title: "LifeRing Secular Recovery",
+            description:
+                "LifeRing Secular Recovery is an abstinence-based, worldwide network of individuals seeking to live in recovery from addiction to alcohol or to other non-medically indicated drugs. In LifeRing, we offer each other peer-to-peer support in ways that encourage personal growth and continued learning through personal empowerment.",
+            url: "https://lifering.org/",
+            featured: true
+        },
+        {
+            imageSrc:
+                "https://www.hipaajournal.com/wp-content/uploads/2022/11/hhs-samhsa.jpg",
+            // category: "Travel Tips",
+            // date: "April 21, 2020",
+            title: "SAMHSA’s National Helpline",
+            description:
+                "SAMHSA’s National Helpline, 1-800-662-HELP (4357), (also known as the Treatment Referral Routing Service) or TTY: 1-800-487-4889 is a confidential, free, 24-hour-a-day, 365-day-a-year, information service, in English and Spanish, for individuals and family members facing mental and/or substance use disorders. This service provides referrals to local treatment facilities, support groups, and community-based organizations.",
+            url: "https://www.samhsa.gov/find-help/national-helpline",
+            featured: true
+        },
     ]
 }) => {
     const [visible, setVisible] = useState(7);
@@ -118,14 +155,3 @@ export default ({
         </AnimationRevealPage>
     );
 };
-
-const getPlaceholderPost = () => ({
-    imageSrc:
-        "https://images.unsplash.com/photo-1418854982207-12f710b74003?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80",
-    category: "Travel Guide",
-    date: "April 19, 2020",
-    title: "Visit the beautiful Alps in Switzerland",
-    description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-    url: "https://reddit.com"
-});
