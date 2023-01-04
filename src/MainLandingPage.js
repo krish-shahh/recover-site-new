@@ -138,7 +138,7 @@ export default ({
               <NavLink href="/about">
                 About
               </NavLink>
-              <NavLink href="#">
+              <NavLink href="/resources">
                 Resources
               </NavLink>
               <div tw="md:hidden flex-100 h-0"></div>

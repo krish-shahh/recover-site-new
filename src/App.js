@@ -24,7 +24,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
  */
 
 // import Hero from "components/hero/TwoColumnWithVideo.js";
- import Hero from "components/hero/TwoColumnWithInput.js";
+import Hero from "components/hero/TwoColumnWithInput.js";
 // import Hero from "components/hero/TwoColumnWithFeaturesAndTestimonial.js";
 // import Hero from "components/hero/TwoColumnWithPrimaryBackground.js";
 // import Hero from "components/hero/FullWidthWithImage.js";
@@ -95,8 +95,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 // import SignupPage from "pages/Signup.js";
 // import PricingPage from "pages/Pricing.js";
 import AboutUsPage from "pages/AboutUs.js";
-import ContactUsPage from "pages/ContactUs.js";
-import SponsorPage from "pages/Sponsor.js";
+// import ContactUsPage from "pages/ContactUs.js";
 // import BlogIndexPage from "pages/BlogIndex.js";
 // import TermsOfServicePage from "pages/TermsOfService.js";
 // import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
@@ -121,8 +120,7 @@ export default function App() {
           <Route path="/components/:type/:name" element={<ComponentRenderer />} />
           <Route path="/" element={<MainLandingPage />} />
           <Route path='/about' element={<AboutUsPage />} />
-          <Route path='/contact' element={<ContactUsPage />} />
-          <Route path='/sponsor' element={<SponsorPage />} />
+          <Route path="/header" element={<Hero />} />
         </Routes>
       </Router>
     </>
