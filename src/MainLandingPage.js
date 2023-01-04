@@ -126,27 +126,7 @@ export default ({
     <AnimationRevealPage disabled>
       <Container tw="bg-gray-100 -mx-8 -mt-8 pt-8 px-8">
         <Content2Xl>
-          <NavRow>
-            <LogoLink href="/">
-              <img src={logo} alt="" />
-              ReCover
-            </LogoLink>
-            <div tw="flex flex-wrap justify-center lg:justify-end items-center -mr-12">
-              <NavLink href="#">
-                Search
-              </NavLink>
-              <NavLink href="/about">
-                About
-              </NavLink>
-              <NavLink href="/resources">
-                Resources
-              </NavLink>
-              <div tw="md:hidden flex-100 h-0"></div>
-              <PrimaryNavLink href="/sponsor">
-                Become a Sponsor
-              </PrimaryNavLink>
-            </div>
-          </NavRow>
+          <Navigation />
           <HeroRow>
             <TextColumn>
               <Heading as="h1">
@@ -173,65 +153,6 @@ export default ({
 
           <MiniCenteredFooter />
 
-          <SectionContainer id="landingPageDemos">
-            <SectionHeading>Landing Pages</SectionHeading>
-            <SectionDescription>
-              We have {noOfLandingPages} premade landing pages. Click on the "View Live Demo" button to see them in
-              action. Customizing or Creating your own custom landing page is really simple by using our UI components.
-            </SectionDescription>
-            <PreviewCards>
-              {Object.entries(landingPages).map(([pageName, page], index) => (
-                <PreviewCardContainer key={index}>
-                  <PreviewCard initial="rest" animate="rest" whileHover="hover" href={page.url} target="_blank">
-                    <PreviewCardImageContainer>
-                      <PreviewCardImage
-                        transition={{ type: "tween" }}
-                        variants={previewImageAnimationVariants}
-                        $imageSrc={page.imageSrc}
-                      />
-                    </PreviewCardImageContainer>
-                    <PreviewButton>View Live Demo</PreviewButton>
-                  </PreviewCard>
-                </PreviewCardContainer>
-              ))}
-            </PreviewCards>
-          </SectionContainer>
-          <SectionContainer>
-            <SectionHeading>Inner Pages</SectionHeading>
-            <SectionDescription>
-              We also provide {noOfInnerPages} additional inner pages for your various needs like a signup, login,
-              pricing, about us, contact, blog etc. To view them in action click the "View Live Demo" button.
-            </SectionDescription>
-            <PreviewCards>
-              {Object.entries(innerPages).map(([pageName, page], index) => (
-                <PreviewCardContainer key={index}>
-                  <PreviewCard initial="rest" animate="rest" whileHover="hover" href={page.url} target="_blank">
-                    <PreviewCardImageContainer>
-                      <PreviewCardImage
-                        transition={{ type: "tween" }}
-                        variants={!page.scrollAnimationDisabled && previewImageAnimationVariants}
-                        $imageSrc={page.imageSrc}
-                      />
-                    </PreviewCardImageContainer>
-                    <PreviewButton>View Live Demo</PreviewButton>
-                  </PreviewCard>
-                </PreviewCardContainer>
-              ))}
-            </PreviewCards>
-          </SectionContainer>
-
-          <SectionContainer id="componentDemos">
-            <SectionHeading>Component Blocks</SectionHeading>
-            <SectionDescription>
-              We also provide {noOfComponentBlocks} components along with the premade landing pages so you can create
-              your own landing page within minutes as you see fit. You can combine these components to create 1000s of
-              unique attractive web pages.
-              <span tw="block text-sm text-gray-500 mt-2">
-                (Preview Panel below inspired by Tailwind UI)
-              </span>
-            </SectionDescription>
-            <BlocksRenderer blocks={Object.values(blocks)} />
-          </SectionContainer>
         </Content2Xl>
       </Container>
     </AnimationRevealPage>
