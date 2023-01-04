@@ -86,7 +86,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
                 Resources
               </NavLink>
               <div tw="md:hidden flex-100 h-0"></div>
-              <PrimaryNavLink href="#">
+              <PrimaryNavLink href="/sponsor">
                 Become a Sponsor
               </PrimaryNavLink>
     </NavLinks>
@@ -98,7 +98,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
   const defaultLogoLink = (
     <LogoLink href="/">
       <img src={logo} alt="logo" />
-      Treact
+      ReCover
     </LogoLink>
   );
 

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.55cb0626.css",
-    "main.js": "/static/js/main.0ff0f829.js",
+    "main.css": "/static/css/main.c61fe05b.css",
+    "main.js": "/static/js/main.08a926a4.js",
     "static/media/MainLandingPageHero.png": "/static/media/MainLandingPageHero.30b380787ef7adb09eb6.png",
     "static/media/AgencyLandingPage.jpeg": "/static/media/AgencyLandingPage.717f8ed6737d6161b153.jpeg",
     "static/media/HotelTravelLandingPage.jpeg": "/static/media/HotelTravelLandingPage.7cba2215c02e6e82fc39.jpeg",
@@ -37,8 +37,8 @@
     "static/media/server-redundancy-illustration.svg": "/static/media/server-redundancy-illustration.c60061a07bc1cae436e557144949fd62.svg",
     "static/media/customer-support-illustration.svg": "/static/media/customer-support-illustration.7164659e338b9013dc196213c60c8ad2.svg",
     "static/media/celebration-icon.svg": "/static/media/celebration-icon.0d9bb9633fcda75b7632a11eaf12bbac.svg",
-    "static/media/chef-icon.svg": "/static/media/chef-icon.866e076bd2347712ef1d5cb77189d5fb.svg",
     "index.html": "/index.html",
+    "static/media/chef-icon.svg": "/static/media/chef-icon.866e076bd2347712ef1d5cb77189d5fb.svg",
     "static/media/shop-icon.svg": "/static/media/shop-icon.048628c95dd89e631ac8c652d04238fb.svg",
     "static/media/email-newsletter-icon.svg": "/static/media/email-newsletter-icon.9dc376555e25ea4167ab7bed861fde55.svg",
     "static/media/github-icon.svg": "/static/media/github-icon.2012dbb259c77fd6aea5e21004ac0818.svg",
@@ -92,11 +92,11 @@
     "static/media/arrow-left-3-icon.svg": "/static/media/arrow-left-3-icon.d48c6bae447f4492e1860f8a253007c8.svg",
     "static/media/arrow-right-3-icon.svg": "/static/media/arrow-right-3-icon.d415f77e8dc81ff77fdb53c0ee2da771.svg",
     "static/media/handle-icon.svg": "/static/media/handle-icon.75eb6395a03cd55833f64fd24df39ff5.svg",
-    "main.55cb0626.css.map": "/static/css/main.55cb0626.css.map",
-    "main.0ff0f829.js.map": "/static/js/main.0ff0f829.js.map"
+    "main.c61fe05b.css.map": "/static/css/main.c61fe05b.css.map",
+    "main.08a926a4.js.map": "/static/js/main.08a926a4.js.map"
   },
   "entrypoints": [
-    "static/css/main.55cb0626.css",
-    "static/js/main.0ff0f829.js"
+    "static/css/main.c61fe05b.css",
+    "static/js/main.08a926a4.js"
   ]
 }

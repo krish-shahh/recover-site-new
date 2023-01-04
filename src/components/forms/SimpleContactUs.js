@@ -3,7 +3,6 @@ import styled from "styled-components";
 import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import {ReactComponent as SvgDotPatternIcon} from "../../images/dot-pattern.svg"
-import './SponsorForm.css'
 
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
@@ -36,28 +35,6 @@ const SubmitButton = tw.button`w-full sm:w-32 mt-6 py-3 bg-gray-100 text-primary
 const SvgDotPattern1 = tw(SvgDotPatternIcon)`absolute bottom-0 right-0 transform translate-y-1/2 translate-x-1/2 -z-10 opacity-50 text-primary-500 fill-current w-24`
 
 export default () => {
-  /*
-  const [name , setName] = useState();
-  const [email , setEmail] = useState();
-  const [history, setHistory] = useState();
-  const [location, setLocation] = useState();
-  const [years, setYears] = useState();
-  const [profile, setProfile] = useState();
-  const [message, setMessage] = useState();
-      
-  // Submit Function
-  const Submit = () => {
-    database.ref("sponsor").set({
-      name : name,
-      email : email,
-      history: history,
-      location: location,
-      years: years,
-      profile: profile,
-      message: message,
-    }).catch(alert);
-  }
-  */
 
   return (
     <Container>
@@ -65,7 +42,7 @@ export default () => {
         <FormContainer>
           <div tw="mx-auto max-w-4xl">
             <h2>Become a Sponsor</h2>
-            <form>
+            <form id="sponsorForm">
               <TwoColumn>
                 <Column>
                   <InputContainer>
@@ -74,34 +51,34 @@ export default () => {
                   </InputContainer>
                   <InputContainer>
                     <Label htmlFor="email-input">Your Email Address</Label>
-                    <Input id="email"  type="email" name="email" placeholder="john@mail.com" required/>
+                    <Input id="email" type="email" name="email" placeholder="john@mail.com" required/>
                   </InputContainer>
                   <InputContainer>
                     <Label htmlFor="history-input">Addiction History</Label>
-                    <Input id="history"  type="text" name="history" placeholder="Alcohol" required/>
+                    <Input id="history" type="text" name="history" placeholder="Alcohol" required/>
                   </InputContainer>
                 </Column>
                 <Column>
                   <InputContainer>
                     <Label htmlFor="location-input">Location (State)</Label>
-                    <Input id="location"  type="text" name="location" placeholder="New Jersey" required/>
+                    <Input id="location" type="text" name="location" placeholder="New Jersey" required/>
                   </InputContainer>
                   <InputContainer>
                     <Label htmlFor="years-input">Years Sober</Label>
-                    <Input id="years"  type="number" name="years" placeholder="1" min="1" required/>
+                    <Input id="years" type="number" name="years" placeholder="1" min="1" required/>
                   </InputContainer>
                   <InputContainer>
                     <Label htmlFor="profile-input">Profile Picture</Label>
-                    <Input id="profile"  type="file" accept="image/*" name="profile" required/>
+                    <Input id="profile" type="file" accept="image/*" name="profile" required/>
                   </InputContainer>
                 </Column>
               </TwoColumn>
               <InputContainer tw="flex-1">
                     <Label htmlFor="message-input">Brief Biography</Label>
-                    <TextArea id="message"  name="message" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." required/>
+                    <TextArea id="message" name="message" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." required/>
               </InputContainer>
 
-              <SubmitButton type="submit" value="Submit">Submit</SubmitButton>
+              <SubmitButton type="submit">Submit</SubmitButton>
             </form>
           </div>
           <SvgDotPattern1 />
