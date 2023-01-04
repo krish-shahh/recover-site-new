@@ -22,6 +22,7 @@ import heroScreenshotImageSrc from "images/demo/MainLandingPageHero.png";
 import logo from "images/logo.svg";
 import useInView from "helpers/useInView";
 import MiniCenteredFooter from ".//components/footers/MiniCenteredFooter.js"
+import Navigation from ".//components/headers/light.js"
 
 /* Hero */
 const Row = tw.div`flex`;
@@ -128,20 +129,17 @@ export default ({
           <NavRow>
             <LogoLink href="/">
               <img src={logo} alt="" />
-              Treact
+              ReCover
             </LogoLink>
             <div tw="flex flex-wrap justify-center lg:justify-end items-center -mr-12">
-              <NavLink target="_blank" href="https://owaiskhan.me/post/free-tailwindcss-react-ui-kit">
-                License & Usage
+              <NavLink href="#">
+                Search
               </NavLink>
-              <NavLink target="_blank" href="https://owaiskhan.me">
-                Who Am I ?
+              <NavLink href="/about">
+                About
               </NavLink>
-              <NavLink target="_blank" href="https://twitter.com/owaiswiz">
-                Twitter
-              </NavLink>
-              <NavLink target="_blank" href="mailto:owaiswiz@gmail.com">
-                Hire Me!
+              <NavLink href="#">
+                Resources
               </NavLink>
               <div tw="md:hidden flex-100 h-0"></div>
               <PrimaryNavLink href="#">
@@ -173,10 +171,7 @@ export default ({
             </ImageColumn>
           </HeroRow>
 
-          <SectionContainer id="footer">
             <MiniCenteredFooter />
-          </SectionContainer>
-
 
           <SectionContainer id="landingPageDemos">
             <SectionHeading>Landing Pages</SectionHeading>

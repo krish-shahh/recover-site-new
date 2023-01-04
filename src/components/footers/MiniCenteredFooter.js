@@ -39,11 +39,12 @@ export default () => {
             <LogoText>ReCover</LogoText>
           </LogoContainer>
           <LinksContainer>
-            <Link href="#">Home</Link>
+            <Link href="/">Home</Link>
+            <Link href="#">Search</Link>
+            <Link href="/about">About</Link>
             <Link href="#">About</Link>
-            <Link href="#">Contact Us</Link>
-            <Link href="#">Blog</Link>
-            <Link href="#">Reviews</Link>
+            <Link href="#">Resources</Link>
+            <Link href="#">Become a Sponsor</Link>
           </LinksContainer>
           <SocialLinksContainer>
             <SocialLink href="https://facebook.com">

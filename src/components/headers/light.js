@@ -26,6 +26,10 @@ export const NavLink = tw.a`
   pb-1 border-b-2 border-transparent hover:border-primary-500 hocus:text-primary-500
 `;
 
+const PrimaryNavLink = tw(
+  NavLink
+)`text-gray-100 bg-primary-500 px-6 py-3 border-none rounded hocus:bg-primary-900 focus:shadow-outline mt-6 md:mt-4 lg:mt-0`;
+
 export const PrimaryLink = tw(NavLink)`
   lg:mx-0
   px-8 py-3 rounded bg-primary-500 text-gray-100
@@ -72,14 +76,19 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
    */
   const defaultLinks = [
     <NavLinks key={1}>
-      <NavLink href="/#">About</NavLink>
-      <NavLink href="/#">Blog</NavLink>
-      <NavLink href="/#">Pricing</NavLink>
-      <NavLink href="/#">Contact Us</NavLink>
-      <NavLink href="/#" tw="lg:ml-12!">
-        Login
-      </NavLink>
-      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="/#">Sign Up</PrimaryLink>
+      <NavLink href="#">
+                Search
+              </NavLink>
+              <NavLink href="/about">
+                About
+              </NavLink>
+              <NavLink href="#">
+                Resources
+              </NavLink>
+              <div tw="md:hidden flex-100 h-0"></div>
+              <PrimaryNavLink href="#">
+                Become a Sponsor
+              </PrimaryNavLink>
     </NavLinks>
   ];
 
