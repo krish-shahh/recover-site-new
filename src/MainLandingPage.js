@@ -142,7 +142,7 @@ export default ({
                 Resources
               </NavLink>
               <div tw="md:hidden flex-100 h-0"></div>
-              <PrimaryNavLink href="#">
+              <PrimaryNavLink href="/sponsor">
                 Become a Sponsor
               </PrimaryNavLink>
             </div>
@@ -171,7 +171,7 @@ export default ({
             </ImageColumn>
           </HeroRow>
 
-            <MiniCenteredFooter />
+          <MiniCenteredFooter />
 
           <SectionContainer id="landingPageDemos">
             <SectionHeading>Landing Pages</SectionHeading>

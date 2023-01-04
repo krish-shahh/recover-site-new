@@ -67,7 +67,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 // import FAQ from "components/faqs/SingleCol.js";
 // import FAQ from "components/faqs/TwoColumnPrimaryBackground.js";
 
-// import ContactUsForm from "components/forms/SimpleContactUs.js";
+// import SponsorForm from "components/forms/SimpleContactUs.js";
 // import ContactUsForm from "components/forms/TwoColContactUsWithIllustration.js";
 // import SubscribeNewsLetterForm from "components/forms/SimpleSubscribeNewsletter.js";
 //
@@ -95,7 +95,8 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 // import SignupPage from "pages/Signup.js";
 // import PricingPage from "pages/Pricing.js";
 import AboutUsPage from "pages/AboutUs.js";
-// import ContactUsPage from "pages/ContactUs.js";
+import ContactUsPage from "pages/ContactUs.js";
+import SponsorPage from "pages/Sponsor.js";
 // import BlogIndexPage from "pages/BlogIndex.js";
 // import TermsOfServicePage from "pages/TermsOfService.js";
 // import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
@@ -120,7 +121,8 @@ export default function App() {
           <Route path="/components/:type/:name" element={<ComponentRenderer />} />
           <Route path="/" element={<MainLandingPage />} />
           <Route path='/about' element={<AboutUsPage />} />
-          <Route path="/header" element={<Hero />} />
+          <Route path='/contact' element={<ContactUsPage />} />
+          <Route path='/sponsor' element={<SponsorPage />} />
         </Routes>
       </Router>
     </>

@@ -42,9 +42,9 @@ export default () => {
             <Link href="/">Home</Link>
             <Link href="#">Search</Link>
             <Link href="/about">About</Link>
-            <Link href="#">About</Link>
+            <Link href="/contact">Contact</Link>
             <Link href="#">Resources</Link>
-            <Link href="#">Become a Sponsor</Link>
+            <Link href="/sponsor">Become a Sponsor</Link>
           </LinksContainer>
           <SocialLinksContainer>
             <SocialLink href="https://facebook.com">
