@@ -138,7 +138,7 @@ export default ({
               <NavLink href="/about">
                 About
               </NavLink>
-              <NavLink href="/resources">
+              <NavLink href="#">
                 Resources
               </NavLink>
               <div tw="md:hidden flex-100 h-0"></div>
@@ -171,7 +171,7 @@ export default ({
             </ImageColumn>
           </HeroRow>
 
-          <MiniCenteredFooter />
+            <MiniCenteredFooter />
 
           <SectionContainer id="landingPageDemos">
             <SectionHeading>Landing Pages</SectionHeading>
