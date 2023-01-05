@@ -98,6 +98,7 @@ import AboutUsPage from "pages/AboutUs.js";
 import SponsorPage from "pages/Sponsor.js"
 // import ContactUsPage from "pages/ContactUs.js";
 import ResourcesPage from 'pages/Resources.js';
+import AboutPage from 'pages/About.js';
 // import BlogIndexPage from "pages/BlogIndex.js";
 // import TermsOfServicePage from "pages/TermsOfService.js";
 // import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
@@ -121,7 +122,7 @@ export default function App() {
           <Route path="/components/:type/:subtype/:name" element={<ComponentRenderer />} />
           <Route path="/components/:type/:name" element={<ComponentRenderer />} />
           <Route path="/" element={<MainLandingPage />} />
-          <Route path='/about' element={<AboutUsPage />} />
+          <Route path='/about' element={<AboutPage />} />
           <Route path='/sponsor' element={<SponsorPage />} />
           <Route path='/resources' element={<ResourcesPage />} />
         </Routes>

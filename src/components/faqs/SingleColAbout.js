@@ -21,6 +21,9 @@ const FAQSContainer = tw.dl`mt-12 max-w-4xl relative`;
 const FAQ = tw.div`cursor-pointer select-none mt-5 px-8 sm:px-10 py-5 sm:py-4 rounded-lg text-gray-800 hover:text-gray-900 bg-gray-200 hover:bg-gray-300 transition duration-300`;
 const Question = tw.dt`flex justify-between items-center`;
 const QuestionText = tw.span`text-lg lg:text-xl font-semibold`;
+
+const q2answer = "ReCover was developed by Founder Krish Shah and Lead Full-Stack Developer Anish Sinha. Personal profiles are listed in the About section."
+
 const QuestionToggleIcon = motion(styled.span`
   ${tw`ml-2 transition duration-300`}
   svg {
@@ -44,24 +47,24 @@ export default ({
   description = "And we have got answers to all of them. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   faqs = [
     {
-      question: "Is lunch provided free of cost ?",
+      question: "What is ReCover?",
       answer:
-        "Yes, it is, if you have a membership with us. Otherwise it is charged as per the menu. Some limits do apply as to how much items can be included in your lunch. This limit is enough for any one person and merely exists to discourage abusal of the system."
+        "ReCover is dedicated to helping addicts find the resources needed to help them live in recovery. It connects people struggling with addiction to people who are willing to help support them. Our main goal is to make Sponsors easily available, provide resources needed to assist people with addiction, and promote sober events in our communities. This website is a public bulletin. We encourage everyone to share their journey and help evolve the platform into a service that helps all."
     },
     {
-      question: "Do you have 2 Bedroom suites ?",
+      question: "Who developed this website?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        q2answer
     },
     {
-      question: "Are Wi-Fi costs included in the price ?",
+      question: "Why did we make this website?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "We made ReCover so that addicts could get in contact with potential sponsors as fast as possible."
     },
     {
-      question: "Where can I reach you for support ?",
+      question: "What information do you need to provide?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "For addicts, ReCover asks for your state to display the closest sponsor. We do not track your precise location. Sponsors are only required to provide minimal information, such as their state and contact information."
     }
   ]
 }) => {

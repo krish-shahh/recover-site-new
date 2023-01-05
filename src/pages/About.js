@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import tw from "twin.macro";
 import styled from "styled-components"; //eslint-disable-line
@@ -16,24 +16,31 @@ import SupportIconImage from "images/support-icon.svg";
 import ShieldIconImage from "images/shield-icon.svg";
 import CustomerLoveIconImage from "images/simple-icon.svg";
 
-const Subheading = tw.span`uppercase tracking-wider text-sm`;
+import SingleColAbout from 'components/faqs/SingleColAbout.js';
+import Profile from 'components/features/ProfileTwoColWithButton';
+
+const Subheading = tw.span`tracking-wider text-6xl`;
+
 export default () => {
   return (
     <AnimationRevealPage>
       <Header />
       <MainFeature1
-        subheading={<Subheading>About Treact</Subheading>}
-        heading="We are a modern design agency."
+        subheading={<Subheading>About ReCover</Subheading>}
+        heading="We help people on the path to recovery."
+        description='ReCover is dedicated to helping addicts find the resources needed to help them live in recovery. It connects people struggling with addiction to Sponsors who are willing to help support them. Our main goal is to make Sponsors easily available, provide resources needed to assist people with addiction, and promote sober events in our communities.'
         buttonRounded={false}
         primaryButtonText="See Portfolio"
         imageSrc="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
       />
-      <MainFeature1
-        subheading={<Subheading>Our Vision</Subheading>}
-        heading="We aim to disrupt the design space."
+      <SingleColAbout />
+
+      <Profile
+        subheading={<Subheading>Krish Shah</Subheading>}
+        heading="Computer Engineering Student at Boston University"
         buttonRounded={false}
         primaryButtonText="Contact Us"
-        imageSrc="https://images.unsplash.com/3/doctype-hi-res.jpg?ixlib=rb-1.2.1&auto=format&fit=crop&w=768&q=80"
+        imageSrc="https://github.com/krish-shahh.png"
         textOnLeft={false}
       />
       <Features
