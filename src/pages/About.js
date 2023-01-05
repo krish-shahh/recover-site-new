@@ -19,8 +19,12 @@ import CustomerLoveIconImage from "images/simple-icon.svg";
 import SingleColAbout from 'components/faqs/SingleColAbout.js';
 import Profile from 'components/features/ProfileTwoColWithButton';
 import Profile2 from 'components/features/Profile2TwoColWithButton';
+import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 
 const Subheading = tw.span`tracking-wider text-6xl`;
+const Heading2 = tw(
+  SectionHeading
+)`mt-4 font-black text-center text-3xl sm:text-6xl lg:text-6xl text-center md:text-center leading-tight`;
 
 export default () => {
   return (
@@ -35,7 +39,9 @@ export default () => {
         imageSrc="https://www.newliferecoverycenter.net/wp-content/uploads/2022/10/addiction-recovery-program.jpeg"
       />
       <SingleColAbout />
-
+      <br></br><br></br><br></br><br></br><br></br>
+      <Heading2>Creators</Heading2>
+      <br></br><br></br>
       <Profile
         subheading={<Subheading>Krish Shah</Subheading>}
         heading="Founder and Lead Manager"
