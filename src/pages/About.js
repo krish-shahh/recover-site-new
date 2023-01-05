@@ -18,6 +18,7 @@ import CustomerLoveIconImage from "images/simple-icon.svg";
 
 import SingleColAbout from 'components/faqs/SingleColAbout.js';
 import Profile from 'components/features/ProfileTwoColWithButton';
+import Profile2 from 'components/features/Profile2TwoColWithButton';
 
 const Subheading = tw.span`tracking-wider text-6xl`;
 
@@ -31,16 +32,24 @@ export default () => {
         description='ReCover is dedicated to helping addicts find the resources needed to help them live in recovery. It connects people struggling with addiction to Sponsors who are willing to help support them. Our main goal is to make Sponsors easily available, provide resources needed to assist people with addiction, and promote sober events in our communities.'
         buttonRounded={false}
         primaryButtonText="See Portfolio"
-        imageSrc="https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=768&q=80"
+        imageSrc="https://www.newliferecoverycenter.net/wp-content/uploads/2022/10/addiction-recovery-program.jpeg"
       />
       <SingleColAbout />
 
       <Profile
         subheading={<Subheading>Krish Shah</Subheading>}
-        heading="Computer Engineering Student at Boston University"
+        heading="Founder and Lead Manager"
         buttonRounded={false}
         primaryButtonText="Contact Us"
         imageSrc="https://github.com/krish-shahh.png"
+        textOnLeft={false}
+      />
+      <Profile2
+        subheading={<Subheading>Anish Sinha</Subheading>}
+        heading="Lead Full-Stack Developer"
+        buttonRounded={false}
+        primaryButtonText="Contact Us"
+        imageSrc="https://mail.google.com/mail/u/0?ui=2&ik=ca0c8bafcf&attid=0.1.1&permmsgid=msg-f:1754155247645808412&th=185802e760d0d71c&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ-nt375Ccyzvl3dbNV8oX2AXYh6MSGVwC6d6I_dVWJz9wbDt69T1Fibj2i1BL1bZ8FMQpDaHZ3mVqh5sxyNNNmcfeigpbHMCSOc6NM4ZxZS_0Sgx0OM1ngWMBE&disp=emb"
         textOnLeft={false}
       />
       <Features
@@ -66,9 +75,9 @@ export default () => {
         ]}
         linkText=""
       />
-      <TeamCardGrid
+      {/* <TeamCardGrid
         subheading={<Subheading>Our Team</Subheading>}
-      />
+      /> */}
       <Footer />
     </AnimationRevealPage>
   );

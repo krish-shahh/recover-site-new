@@ -61,7 +61,7 @@ export default ({
       Designed & Developed by <span tw="text-primary-500">Professionals.</span>
     </>
   ),
-  description = "Hey, I'm Krish, a compassionate and energetic freshman at Boston University studying Computer Engineering with a concentration in Machine Learning and a minor in Data Science. Currently, a Machine Learning Intern at Princeton Equity Group and an SWE & Research Intern at The Zone.",
+  description = "Hey, I'm Krish, a compassionate and energetic student at Boston University studying Computer Engineering with a concentration in Machine Learning and a minor in Data Science. Currently, a Machine Learning Intern at Princeton Equity Group and an SWE & Research Intern at The Zone.",
   primaryButtonText = "Learn More",
   primaryButtonUrl = "https://timerse.com",
   imageSrc = TeamIllustrationSrc,

@@ -61,7 +61,7 @@ export default ({
       Designed & Developed by <span tw="text-primary-500">Professionals.</span>
     </>
   ),
-  description = "Hey, I'm Krish, a compassionate and energetic freshman at Boston University studying Computer Engineering with a concentration in Machine Learning and a minor in Data Science. Currently, a Machine Learning Intern at Princeton Equity Group and an SWE & Research Intern at The Zone.",
+  description = "Hello, my name is Anish Sinha. I am a student at Boston University studying Computer Engineering with a Concentration in Machine Learning. I have a lot of experience in software development and hope to apply my technical skills to further ReCover's mission in fighting addiction.",
   primaryButtonText = "Learn More",
   primaryButtonUrl = "https://timerse.com",
   imageSrc = TeamIllustrationSrc,
@@ -75,15 +75,15 @@ export default ({
   textOnLeft = true,
   links = [
     {
-      url: "https://www.linkedin.com/in/krish-n-shah/",
+      url: "https://www.linkedin.com/in/anish2sinha/",
       icon: LinkedinIcon,
     },
     {
-      url: "https://github.com/krish-shahh",
+      url: "https://github.com/Anish701",
       icon: GithubIcon,
     },
     {
-      url: "https://krish-shah.vercel.app/",
+      url: "https://github.com/Anish701",
       icon: Shop,
     },
   ]
