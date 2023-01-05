@@ -55,7 +55,7 @@ export default () => {
         heading="Lead Full-Stack Developer"
         buttonRounded={false}
         primaryButtonText="Contact Us"
-        imageSrc="https://mail.google.com/mail/u/0?ui=2&ik=ca0c8bafcf&attid=0.1.1&permmsgid=msg-f:1754155247645808412&th=185802e760d0d71c&view=fimg&fur=ip&sz=s0-l75-ft&attbid=ANGjdJ-nt375Ccyzvl3dbNV8oX2AXYh6MSGVwC6d6I_dVWJz9wbDt69T1Fibj2i1BL1bZ8FMQpDaHZ3mVqh5sxyNNNmcfeigpbHMCSOc6NM4ZxZS_0Sgx0OM1ngWMBE&disp=emb"
+        imageSrc="https://github.com/Anish701.png"
         textOnLeft={false}
       />
       <Features
