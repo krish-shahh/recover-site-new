@@ -23,6 +23,11 @@ import logo from "images/logo.svg";
 import useInView from "helpers/useInView";
 import MiniCenteredFooter from ".//components/footers/MiniCenteredFooter.js"
 import Navigation from ".//components/headers/light.js"
+import Features from "components/features/ThreeColSimple.js";
+
+import SupportIconImage from "images/support-icon.svg";
+import ShieldIconImage from "images/shield-icon.svg";
+import CustomerLoveIconImage from "images/simple-icon.svg";
 
 /* Hero */
 const Row = tw.div`flex`;
@@ -130,17 +135,17 @@ export default ({
           <HeroRow>
             <TextColumn>
               <Heading as="h1">
-                Free Modern React Templates for every need.
+                ReCover...
               </Heading>
               <Description>
-                Easily customizable modern React UI Templates and Components built using TailwindCSS which are also lightweight and simple to setup. All components are modular and fully responsive for great mobile experience as well as big desktop screens.  Brand Colors are also fully customizable. Free for personal as well as commercial use.
+              is dedicated to helping addicts find the resources needed to help them live in recovery. It connects people struggling with addiction to people who are willing to help support them. Our main goal is to make Sponsors easily available, provide resources needed to assist people with addiction, and promote sober events in our communities.
               </Description>
               <Actions>
-                <PrimaryButton href="#landingPageDemos" css="">
-                  Explore Demos
+                <PrimaryButton href="#" css="">
+                  Start Searching
                 </PrimaryButton>
-                <SecondaryButton href="#componentDemos">
-                  View Components
+                <SecondaryButton href="/about">
+                  Learn More
                 </SecondaryButton>
               </Actions>
             </TextColumn>
@@ -150,6 +155,28 @@ export default ({
               </ImageContainer>
             </ImageColumn>
           </HeroRow>
+
+          <Features
+            heading="Who We Support"
+            cards={[
+              {
+                imageSrc: SupportIconImage,
+                title: "24/7 Support",
+                description: "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport"
+              },
+              {
+                imageSrc: ShieldIconImage,
+                title: "Strong Teams",
+                description: "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport"
+              },
+              {
+                imageSrc: CustomerLoveIconImage,
+                title: "Customer Satisfaction",
+                description: "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport"
+              },
+            ]}
+            linkText=""
+          />
 
           <MiniCenteredFooter />
 

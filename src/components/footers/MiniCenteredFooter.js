@@ -43,6 +43,7 @@ export default () => {
             <Link href="#">Search</Link>
             <Link href="/about">About</Link>
             <Link href="/resources">Resources</Link>
+            <Link href="#">Events</Link>
             <Link href="/contact">Contact</Link>
             <Link href="/sponsor">Become a Sponsor</Link>
           </LinksContainer>
