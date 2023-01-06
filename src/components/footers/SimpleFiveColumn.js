@@ -41,10 +41,10 @@ export default () => {
         <WideColumn>
           <LogoContainer>
             <LogoImg src={LogoImage} />
-            <LogoText>Treact Inc.</LogoText>
+            <LogoText>ReCover</LogoText>
           </LogoContainer>
           <CompanyDescription>
-            Treact is an Internet Technology company providing design resources such as website templates and themes.
+            ReCover is dedicated to helping addicts find the resources needed to help them live in recovery.
           </CompanyDescription>
           <SocialLinksContainer>
             <SocialLink href="https://facebook.com">
@@ -62,16 +62,16 @@ export default () => {
           <ColumnHeading>Quick Links</ColumnHeading>
           <LinkList>
             <LinkListItem>
+              <Link href="/">Home</Link>
+            </LinkListItem>
+            <LinkListItem>
+              <Link href="/about">About</Link>
+            </LinkListItem>
+            <LinkListItem>
+              <Link href="/contact">Contact</Link>
+            </LinkListItem>
+            <LinkListItem>
               <Link href="#">Blog</Link>
-            </LinkListItem>
-            <LinkListItem>
-              <Link href="#">FAQs</Link>
-            </LinkListItem>
-            <LinkListItem>
-              <Link href="#">Support</Link>
-            </LinkListItem>
-            <LinkListItem>
-              <Link href="#">About Us</Link>
             </LinkListItem>
           </LinkList>
         </Column>
@@ -79,16 +79,16 @@ export default () => {
           <ColumnHeading>Product</ColumnHeading>
           <LinkList>
             <LinkListItem>
-              <Link href="#">Log In</Link>
+              <Link href="/sponsor">Become a Sponsor</Link>
             </LinkListItem>
             <LinkListItem>
-              <Link href="#">Personal</Link>
+              <Link href="#">Search</Link>
             </LinkListItem>
             <LinkListItem>
-              <Link href="#">Business</Link>
+              <Link href="/events">Events</Link>
             </LinkListItem>
             <LinkListItem>
-              <Link href="#">Team</Link>
+              <Link href="/resources">Resources</Link>
             </LinkListItem>
           </LinkList>
         </Column>
