@@ -85,7 +85,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
               <NavLink href="/resources">
                 Resources
               </NavLink>
-              <NavLink href="#">
+              <NavLink href="/events">
                 Events
               </NavLink>
               <div tw="md:hidden flex-100 h-0"></div>
