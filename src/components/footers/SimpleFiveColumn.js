@@ -99,10 +99,10 @@ export default () => {
               <Link href="#">GDPR</Link>
             </LinkListItem>
             <LinkListItem>
-              <Link href="#">Privacy Policy</Link>
+              <Link href="/privacy">Privacy Policy</Link>
             </LinkListItem>
             <LinkListItem>
-              <Link href="#">Terms of Service</Link>
+              <Link href="/terms">Terms of Service</Link>
             </LinkListItem>
             <LinkListItem>
               <Link href="#">Disclaimer</Link>
