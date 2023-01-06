@@ -21,7 +21,7 @@ import { ReactComponent as ArrowRightIcon } from "images/arrow-right-3-icon.svg"
 import heroScreenshotImageSrc from "images/demo/MainLandingPageHero.png";
 import logo from "images/logo.svg";
 import useInView from "helpers/useInView";
-import MiniCenteredFooter from ".//components/footers/MiniCenteredFooter.js"
+import MiniCenteredFooter from ".//components/footers/SimpleFiveColumn"
 import Navigation from ".//components/headers/light.js"
 import Features from "components/features/ThreeColSimple.js";
 

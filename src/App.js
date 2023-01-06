@@ -96,7 +96,7 @@ import Hero from "components/hero/TwoColumnWithInput.js";
 // import PricingPage from "pages/Pricing.js";
 import AboutUsPage from "pages/AboutUs.js";
 import SponsorPage from "pages/Sponsor.js"
-// import ContactUsPage from "pages/ContactUs.js";
+import ContactUsPage from "pages/ContactUs.js";
 import ResourcesPage from 'pages/Resources.js';
 import AboutPage from 'pages/About.js';
 import BlogIndexPage from "pages/BlogIndex.js";
@@ -126,6 +126,7 @@ export default function App() {
           <Route path='/sponsor' element={<SponsorPage />} />
           <Route path='/resources' element={<ResourcesPage />} />
           <Route path='/events' element={<BlogIndexPage />} />
+          <Route path='/contact' element={<ContactUsPage />} />
         </Routes>
       </Router>
     </>

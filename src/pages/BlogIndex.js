@@ -10,7 +10,7 @@ import { ReactComponent as SvgDecoratorBlob1 } from "../images/svg-decorator-blo
 import { ReactComponent as SvgDecoratorBlob2 } from "../images/svg-decorator-blob-3.svg";
 import Header from "components/headers/light.js";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
-import Footer from "components/footers/MiniCenteredFooter";
+import Footer from "components/footers/SimpleFiveColumn";
 
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
