@@ -91,7 +91,7 @@ import Hero from "components/hero/TwoColumnWithInput.js";
 // import HostingCloudLandingPage from "demos/HostingCloudLandingPage.js";
 
 /* Inner Pages */
-// import LoginPage from "pages/Login.js";
+import LoginPage from "pages/Signup.js";
 // import SignupPage from "pages/Signup.js";
 // import PricingPage from "pages/Pricing.js";
 import AboutUsPage from "pages/AboutUs.js";
@@ -123,6 +123,7 @@ export default function App() {
           <Route path="/components/:type/:name" element={<ComponentRenderer />} />
           <Route path="/" element={<MainLandingPage />} />
           <Route path='/about' element={<AboutPage />} />
+          <Route path='/login' element={<LoginPage />} />
           <Route path='/sponsor' element={<SponsorPage />} />
           <Route path='/resources' element={<ResourcesPage />} />
           <Route path='/events' element={<BlogIndexPage />} />
