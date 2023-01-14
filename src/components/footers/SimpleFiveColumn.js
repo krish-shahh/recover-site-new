@@ -42,7 +42,6 @@ export default () => {
       <FiveColumns>
         <WideColumn>
           <LogoContainer>
-            <LogoImg src={LogoImage} />
             <LogoText>ReCover</LogoText>
           </LogoContainer>
           <CompanyDescription>

@@ -91,7 +91,7 @@ import Hero from "components/hero/TwoColumnWithInput.js";
 // import HostingCloudLandingPage from "demos/HostingCloudLandingPage.js";
 
 /* Inner Pages */
-import LoginPage from "pages/Signup.js";
+import LoginPage from "pages/SearchSignIn";
 // import SignupPage from "pages/Signup.js";
 // import PricingPage from "pages/Pricing.js";
 import AboutUsPage from "pages/AboutUs.js";
@@ -108,6 +108,7 @@ import MainLandingPage from "MainLandingPage.js";
 import ThankYouPage from "ThankYouPage.js";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { AuthContextProvider } from "context/AuthContext";
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -118,19 +119,21 @@ export default function App() {
     <>
       <GlobalStyles />
       <Router>
-        <Routes>
-          <Route path="/components/:type/:subtype/:name" element={<ComponentRenderer />} />
-          <Route path="/components/:type/:name" element={<ComponentRenderer />} />
-          <Route path="/" element={<MainLandingPage />} />
-          <Route path='/about' element={<AboutPage />} />
-          <Route path='/login' element={<LoginPage />} />
-          <Route path='/sponsor' element={<SponsorPage />} />
-          <Route path='/resources' element={<ResourcesPage />} />
-          <Route path='/events' element={<BlogIndexPage />} />
-          <Route path='/contact' element={<ContactUsPage />} />
-          <Route path='/terms' element={<TermsOfServicePage />} />
-          <Route path='/privacy' element={<PrivacyPolicyPage />} />
-        </Routes>
+        <AuthContextProvider>
+          <Routes>
+            <Route path="/components/:type/:subtype/:name" element={<ComponentRenderer />} />
+            <Route path="/components/:type/:name" element={<ComponentRenderer />} />
+            <Route path="/" element={<MainLandingPage />} />
+            <Route path='/about' element={<AboutPage />} />
+            <Route path='/login' element={<LoginPage />} />
+            <Route path='/sponsor' element={<SponsorPage />} />
+            <Route path='/resources' element={<ResourcesPage />} />
+            <Route path='/events' element={<BlogIndexPage />} />
+            <Route path='/contact' element={<ContactUsPage />} />
+            <Route path='/terms' element={<TermsOfServicePage />} />
+            <Route path='/privacy' element={<PrivacyPolicyPage />} />
+          </Routes>
+        </AuthContextProvider>
       </Router>
     </>
   );
