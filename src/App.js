@@ -126,7 +126,6 @@ export default function App() {
             <Route path="/components/:type/:name" element={<ComponentRenderer />} />
             <Route path="/" element={<MainLandingPage />} />
             <Route path='/about' element={<AboutPage />} />
-            <Route path='/search' element={<SearchPage />} />
             <Route path='/login' element={<LoginPage />} />
             <Route path='/sponsor' element={<SponsorPage />} />
             <Route path='/resources' element={<ResourcesPage />} />
@@ -134,6 +133,7 @@ export default function App() {
             <Route path='/contact' element={<ContactUsPage />} />
             <Route path='/terms' element={<TermsOfServicePage />} />
             <Route path='/privacy' element={<PrivacyPolicyPage />} />
+            <Route path='/search' element={<SearchPage />} />
           </Routes>
         </AuthContextProvider>
       </Router>

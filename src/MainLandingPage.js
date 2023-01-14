@@ -25,12 +25,14 @@ import MiniCenteredFooter from ".//components/footers/SimpleFiveColumn"
 import Navigation from ".//components/headers/light.js"
 import Features from "components/features/ThreeColSimple.js";
 
+
 import SupportIconImage from "images/support-icon.svg";
 import ShieldIconImage from "images/shield-icon.svg";
 import CustomerLoveIconImage from "images/simple-icon.svg";
 
 /* Hero */
 const Row = tw.div`flex`;
+const Content = tw.div`max-w-screen-xl mx-auto`;
 const NavRow = tw(Row)`flex flex-col lg:flex-row items-center justify-between`;
 const NavLink = tw.a`mt-4 lg:mt-0 transition duration-300 font-medium pb-1 border-b-2 mr-12 text-gray-700 border-gray-400 hocus:border-gray-700`;
 const PrimaryNavLink = tw(
@@ -99,14 +101,6 @@ export default ({
   heading = "Free Modern React Templates for every need.",
   description = "Easily customizable modern React UI Templates and Components built using TailwindCSS which are also lightweight and simple to setup. All components are modular and fully responsive for great mobile experience as well as big desktop screens.  Brand Colors are also fully customizable. Free for personal as well as commercial use."
 }) => {
-  /*
-   * Using gtag like this because we only want to use Google Analytics when Main Landing Page is rendered
-   * Remove this part and the the gtag script inside public/index.html if you dont need google analytics
-   */
-  useEffect(() => {
-    window.gtag("js", new Date());
-    window.gtag("config", "UA-45799926-9");
-  }, [])
 
   const previewImageAnimationVariants = {
     rest: {
@@ -134,8 +128,8 @@ export default ({
   return (
     <AnimationRevealPage disabled>
       <Container tw="bg-gray-100 -mx-8 -mt-8 pt-8 px-8">
-        <Content2Xl>
-          <Navigation />
+        <Content>
+        <Navigation />
           <HeroRow>
             <TextColumn>
               <Heading as="h1">
@@ -184,7 +178,7 @@ export default ({
 
           <MiniCenteredFooter />
 
-        </Content2Xl>
+        </Content>
       </Container>
     </AnimationRevealPage>
   );

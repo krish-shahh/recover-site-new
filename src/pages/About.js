@@ -21,6 +21,7 @@ import Profile from 'components/features/ProfileTwoColWithButton';
 import Profile2 from 'components/features/Profile2TwoColWithButton';
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 
+const Content = tw.div`max-w-screen-xl mx-auto`;
 const Subheading = tw.span`tracking-wider text-6xl`;
 const Heading2 = tw(
   SectionHeading
@@ -30,6 +31,7 @@ export default () => {
   return (
     <AnimationRevealPage>
       <Header />
+      <Content>
       <MainFeature1
         subheading={<Subheading>About ReCover</Subheading>}
         heading="We help people on the path to recovery."
@@ -85,6 +87,7 @@ export default () => {
         subheading={<Subheading>Our Team</Subheading>}
       /> */}
       <Footer />
+      </Content>
     </AnimationRevealPage>
   );
 };

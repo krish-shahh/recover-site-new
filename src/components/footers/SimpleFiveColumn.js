@@ -74,6 +74,9 @@ export default () => {
             <LinkListItem>
               <Link href="#">Blog</Link>
             </LinkListItem>
+            <LinkListItem>
+              <Link href="/privacy">Privacy Policy</Link>
+            </LinkListItem>
           </LinkList>
         </Column>
         <Column>
@@ -91,22 +94,8 @@ export default () => {
             <LinkListItem>
               <Link href="/resources">Resources</Link>
             </LinkListItem>
-          </LinkList>
-        </Column>
-        <Column>
-          <ColumnHeading>Legal</ColumnHeading>
-          <LinkList>
-            <LinkListItem>
-              <Link href="#">GDPR</Link>
-            </LinkListItem>
-            <LinkListItem>
-              <Link href="/privacy">Privacy Policy</Link>
-            </LinkListItem>
             <LinkListItem>
               <Link href="/terms">Terms of Service</Link>
-            </LinkListItem>
-            <LinkListItem>
-              <Link href="#">Disclaimer</Link>
             </LinkListItem>
           </LinkList>
         </Column>

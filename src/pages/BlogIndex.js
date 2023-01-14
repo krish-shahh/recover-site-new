@@ -14,6 +14,7 @@ import Footer from "components/footers/SimpleFiveColumn";
 
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
+const ContentCopy = tw.div`max-w-screen-xl mx-auto`;
 const ThreeColumn = tw.div`flex flex-col items-center lg:items-stretch lg:flex-row flex-wrap`;
 const Column = tw.div`mt-24 lg:w-1/3`;
 
@@ -119,7 +120,9 @@ export default ({
       <DecoratorBlob1 />
       <DecoratorBlob2 />
     </Container>
-    <Footer />
+    <ContentCopy>
+      <Footer />
+    </ContentCopy>
     </AnimationRevealPage>
   );
 };

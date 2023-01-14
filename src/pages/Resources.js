@@ -10,6 +10,7 @@ import { SectionHeading } from "components/misc/Headings";
 import { PrimaryButton } from "components/misc/Buttons";
 
 const HeadingRow = tw.div`flex`;
+const Content = tw.div`max-w-screen-xl mx-auto`;
 const Heading = tw(SectionHeading)`text-gray-900`;
 const Posts = tw.div`mt-6 sm:-mr-8 flex flex-wrap`;
 const PostContainer = styled.div`
@@ -152,7 +153,9 @@ export default ({
                     )}
                 </ContentWithPaddingXl>
             </Container>
-            <Footer />
+            <Content>
+                <Footer />
+            </Content>
         </AnimationRevealPage>
     );
 };
