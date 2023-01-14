@@ -36,12 +36,7 @@ export const NavLink = tw.a`
 // )`text-gray-100 bg-primary-500 px-6 py-3 border-none rounded hocus:bg-primary-900 focus:shadow-outline mt-6 md:mt-4 lg:mt-0`;
 const PrimaryNavLink = tw(
   NavLink
-<<<<<<< Updated upstream
 )`text-gray-100 bg-red-700 px-6 py-3 border-none rounded hocus:bg-red-900 focus:shadow-outline mt-6 md:mt-4 lg:mt-0`;
-=======
-)`text-gray-100 
-  bg-primary-500 px-6 py-3 border-none rounded hocus:bg-primary-900 focus:shadow-outline mt-6 md:mt-4 lg:mt-0`;
->>>>>>> Stashed changes
 
 export const PrimaryLink = tw(NavLink)`
   lg:mx-0
