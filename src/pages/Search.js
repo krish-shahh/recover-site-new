@@ -10,17 +10,17 @@ const Content = tw.div`max-w-screen-xl mx-auto`;
 export default () => {
   return (
     <div className="App">
-        
-            <AnimationRevealPage>
-                <Header />
-                <div className="container">
-                <SearchForm />
-                </div>
-                <Content>
-                    <Footer />
-                </Content>
-            </AnimationRevealPage>
-        
+
+      <AnimationRevealPage>
+        <Header />
+        <div className="container">
+          <SearchForm />
+        </div>
+        <Content>
+          <Footer />
+        </Content>
+      </AnimationRevealPage>
+
     </div>
   );
 };
