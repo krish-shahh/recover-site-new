@@ -20,15 +20,23 @@ export const NavLinks = tw.div`inline-block`;
 /* hocus: stands for "on hover or focus"
  * hocus:bg-primary-700 will apply the bg-primary-700 class on hover or focus
  */
+// export const NavLink = tw.a`
+//   text-lg my-2 lg:text-sm lg:mx-6 lg:my-0
+//   font-semibold tracking-wide transition duration-300
+//   pb-1 border-b-2 border-transparent hover:border-primary-500 hocus:text-primary-500
+// `;
 export const NavLink = tw.a`
   text-lg my-2 lg:text-sm lg:mx-6 lg:my-0
   font-semibold tracking-wide transition duration-300
-  pb-1 border-b-2 border-transparent hover:border-primary-500 hocus:text-primary-500
+  pb-1 border-b-2 border-transparent hover:border-red-500 hocus:text-red-500
 `;
 
+// const PrimaryNavLink = tw(
+//   NavLink
+// )`text-gray-100 bg-primary-500 px-6 py-3 border-none rounded hocus:bg-primary-900 focus:shadow-outline mt-6 md:mt-4 lg:mt-0`;
 const PrimaryNavLink = tw(
   NavLink
-)`text-gray-100 bg-primary-500 px-6 py-3 border-none rounded hocus:bg-primary-900 focus:shadow-outline mt-6 md:mt-4 lg:mt-0`;
+)`text-gray-100 bg-red-700 px-6 py-3 border-none rounded hocus:bg-red-900 focus:shadow-outline mt-6 md:mt-4 lg:mt-0`;
 
 export const PrimaryLink = tw(NavLink)`
   lg:mx-0
@@ -77,21 +85,21 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
   const defaultLinks = [
     <NavLinks key={1}>
       <NavLink href="/login">
-                Search
-              </NavLink>
-              <NavLink href="/about">
-                About
-              </NavLink>
-              <NavLink href="/resources">
-                Resources
-              </NavLink>
-              <NavLink href="/events">
-                Events
-              </NavLink>
-              <div tw="md:hidden flex-100 h-0"></div>
-              <PrimaryNavLink href="/sponsor">
-                Become a Sponsor
-              </PrimaryNavLink>
+        Search
+      </NavLink>
+      <NavLink href="/about">
+        About
+      </NavLink>
+      <NavLink href="/resources">
+        Resources
+      </NavLink>
+      <NavLink href="/events">
+        Events
+      </NavLink>
+      <div tw="md:hidden flex-100 h-0"></div>
+      <PrimaryNavLink href="/sponsor">
+        Become a Sponsor
+      </PrimaryNavLink>
     </NavLinks>
   ];
 

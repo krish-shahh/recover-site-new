@@ -40,7 +40,8 @@ const Image = styled.div`
 const Info = tw.div`p-8 border-2 border-t-0 rounded-lg rounded-t-none`;
 const Category = tw.div`uppercase text-primary-500 text-xs font-bold tracking-widest leading-loose `;
 const CreationDate = tw.div`mt-4 uppercase text-gray-600 italic font-semibold text-xs`;
-const Title = tw.div`mt-1 font-black text-4xl text-gray-900 group-hover:text-primary-500 transition duration-300`;
+// const Title = tw.div`mt-1 font-black text-4xl text-gray-900 group-hover:text-primary-500 transition duration-300`;
+const Title = tw.div`mt-1 font-black text-4xl text-gray-900 group-hover:text-red-700 transition duration-300`;
 const Description = tw.div``;
 
 const ButtonContainer = tw.div`flex justify-center`;

@@ -47,7 +47,7 @@ const PrimaryButton = styled(PrimaryButtonBase)(props => [
 const Links = styled.div`
   ${tw`justify-center mt-6 flex`}
   .link {
-    ${tw`pr-10 mr-8 last:mr-0 text-gray-600 hocus:text-primary-500 transition duration-300`}
+    ${tw`pr-10 mr-8 last:mr-0 text-gray-600 hocus:text-red-700 transition duration-300`}
     .icon {
       ${tw`fill-current w-10 h-10`}
     }

@@ -41,14 +41,18 @@ const HeroRow = tw(Row)`flex-col lg:flex-row justify-between items-center pt-8 l
 const Column = tw.div`flex-1`;
 
 const TextColumn = tw(Column)`mx-auto lg:mr-0 max-w-2xl lg:max-w-xl xl:max-w-2xl flex-shrink-0`;
-const Heading = tw(HeadingBase)`text-center lg:text-left text-primary-900 leading-snug`;
+// const Heading = tw(HeadingBase)`text-center lg:text-left text-primary-900 leading-snug`;
+const Heading = tw(HeadingBase)`text-center lg:text-left text-red-900 leading-snug`;
 const Description = tw(
   DescriptionBase
 )`mt-4 text-center lg:text-left lg:text-base text-gray-700 max-w-lg mx-auto lg:mx-0`;
 const Actions = tw.div`flex flex-col sm:flex-row justify-center lg:justify-start`;
+// const ActionButton = tw(
+//   AnchorLink
+// )`px-8 py-3 font-bold rounded bg-primary-500 text-gray-100 hocus:bg-primary-700 hocus:text-gray-200 focus:shadow-outline focus:outline-none transition duration-300 mt-12 inline-block tracking-wide text-center px-10 py-4 font-semibold tracking-normal`;
 const ActionButton = tw(
   AnchorLink
-)`px-8 py-3 font-bold rounded bg-primary-500 text-gray-100 hocus:bg-primary-700 hocus:text-gray-200 focus:shadow-outline focus:outline-none transition duration-300 mt-12 inline-block tracking-wide text-center px-10 py-4 font-semibold tracking-normal`;
+)`px-8 py-3 font-bold rounded bg-red-700 text-gray-100 hocus:bg-red-900 hocus:text-gray-200 focus:shadow-outline focus:outline-none transition duration-300 mt-12 inline-block tracking-wide text-center px-10 py-4 font-semibold tracking-normal`;
 const PrimaryButton = tw(ActionButton)``;
 const SecondaryButton = tw(
   ActionButton
@@ -138,7 +142,7 @@ export default ({
                 ReCover...
               </Heading>
               <Description>
-              is dedicated to helping addicts find the resources needed to help them live in recovery. It connects people struggling with addiction to people who are willing to help support them. Our main goal is to make Sponsors easily available, provide resources needed to assist people with addiction, and promote sober events in our communities.
+                is dedicated to helping addicts find the resources needed to help them live in recovery. It connects people struggling with addiction to people who are willing to help support them. Our main goal is to make Sponsors easily available, provide resources needed to assist people with addiction, and promote sober events in our communities.
               </Description>
               <Actions>
                 <PrimaryButton href="#" css="">
