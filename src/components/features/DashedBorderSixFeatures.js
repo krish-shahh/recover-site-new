@@ -19,9 +19,17 @@ import ReliableIconImage from "../../images/reliable-icon.svg";
 import SimpleIconImage from "../../images/simple-icon.svg";
 import { ReactComponent as TimeIcon } from "feather-icons/dist/icons/clock.svg";
 import { ReactComponent as PillIcon } from "images/pill.svg";
+import { ReactComponent as RadioIcon } from "feather-icons/dist/icons/radio.svg";
+
 
 const Input = tw.input`w-full items-center text-center border-2 border-primary-500 rounded-full`;
 const Container = tw.div`relative`;
+
+const ColumnNotice = tw.div`flex-1`;
+
+const UpdateNotice = tw(ColumnNotice)`w-full flex-auto mb-4 sm:mb-8 rounded px-4 py-3 sm:px-5 sm:py-4 bg-orange-100 text-orange-800 flex items-center sm:items-start md:items-center justify-center lg:justify-start border border-orange-200 text-xs sm:text-sm text-center sm:text-left md:leading-none`;
+const UpdateNoticeIcon = tw(RadioIcon)`w-0 sm:w-5 sm:mr-3`;
+
 
 const CardAction = tw(PrimaryButtonBase)`w-full mt-6`;
 
@@ -105,6 +113,10 @@ export default () => {
   return (
     <Container>
       <ThreeColumnContainer>
+        <UpdateNotice>
+          <UpdateNoticeIcon />
+            Disclaimer: The data and information displayed on this website are for demonstration purposes only and are not intended to represent real-world data or information. 
+        </UpdateNotice>
         <Heading>
             <Input 
                 type={"text"}

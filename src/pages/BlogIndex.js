@@ -11,12 +11,19 @@ import { ReactComponent as SvgDecoratorBlob2 } from "../images/svg-decorator-blo
 import Header from "components/headers/light.js";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import Footer from "components/footers/SimpleFiveColumn";
+import { ReactComponent as RadioIcon } from "feather-icons/dist/icons/radio.svg";
+
 
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
 const ContentCopy = tw.div`max-w-screen-xl mx-auto`;
 const ThreeColumn = tw.div`flex flex-col items-center lg:items-stretch lg:flex-row flex-wrap`;
 const Column = tw.div`mt-24 lg:w-1/3`;
+
+const ColumnNotice = tw.div`flex-1`;
+
+const UpdateNotice = tw(ColumnNotice)`w-full flex-auto mb-4 sm:mb-8 rounded px-4 py-3 sm:px-5 sm:py-4 bg-orange-100 text-orange-800 flex items-center sm:items-start md:items-center justify-center lg:justify-start border border-orange-200 text-xs sm:text-sm text-center sm:text-left md:leading-none`;
+const UpdateNoticeIcon = tw(RadioIcon)`w-0 sm:w-5 sm:mr-3`;
 
 const HeadingInfoContainer = tw.div`flex flex-col items-center`;
 const HeadingDescription = tw.p`mt-4 font-medium text-gray-600 text-center max-w-sm`;
@@ -88,6 +95,10 @@ export default ({
       <Header />
     <Container>
       <Content>
+        <UpdateNotice>
+          <UpdateNoticeIcon />
+            Disclaimer: The data and information displayed on this website are for demonstration purposes only and are not intended to represent real-world data or information. 
+        </UpdateNotice>
         <HeadingInfoContainer>
           <HeadingTitle>{heading}</HeadingTitle>
           <HeadingDescription>{description}</HeadingDescription>
