@@ -1,10 +1,6 @@
-
 import React, { useState } from "react";
-import AnimationRevealPage from "helpers/AnimationRevealPage.js";
-import Header from "components/headers/light.js";
-import Footer from "components/footers/SimpleFiveColumn";
 import tw from "twin.macro";
-import { mock_data } from './mock_data.js';
+import { mock_data } from '../components/features/mock_data.js';
 const Content = tw.div`max-w-screen-xl mx-auto`;
 
 export default () => {

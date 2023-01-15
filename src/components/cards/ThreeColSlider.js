@@ -43,6 +43,8 @@ const CardImage = styled.div(props => [
 const TextInfo = tw.div`py-6 sm:px-10 sm:py-6`;
 const TitleReviewContainer = tw.div`flex flex-col sm:flex-row sm:justify-between sm:items-center`;
 const Title = tw.h5`text-2xl font-bold`;
+const OtherReviewContainer = tw.div`flex flex-col sm:flex-row sm:justify-between sm:items-center`;
+
 
 const RatingsInfo = styled.div`
   ${tw`flex items-center sm:ml-4 mt-2 sm:mt-0`}
@@ -92,10 +94,10 @@ export default () => {
   const cards = [
     {
       imageSrc: "https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&h=1024&w=768&q=80",
-      title: "Wyatt Residency",
+      title: "John Doe",
       description: "Lorem ipsum dolor sit amet, consectur dolori adipiscing elit, sed do eiusmod tempor nova incididunt ut labore et dolore magna aliqua.",
-      locationText: "Rome, Italy",
-      pricingText: "USD 39/Day",
+      locationText: "New Jersey",
+      pricingText: "27",
       rating: "4.8",
     },
     {
@@ -141,11 +143,10 @@ export default () => {
               <TextInfo>
                 <TitleReviewContainer>
                   <Title>{card.title}</Title>
-                  <RatingsInfo>
-                    <StarIcon />
-                    <Rating>{card.rating}</Rating>
-                  </RatingsInfo>
                 </TitleReviewContainer>
+                <OtherReviewContainer>
+                  <Text>{card.locationText}</Text>
+                </OtherReviewContainer>
                 <SecondaryInfoContainer>
                   <IconWithText>
                     <IconContainer>
@@ -157,7 +158,7 @@ export default () => {
                     <IconContainer>
                       <PriceIcon />
                     </IconContainer>
-                    <Text>{card.pricingText}</Text>
+                    <Text>Years Free: {card.pricingText}</Text>
                   </IconWithText>
                 </SecondaryInfoContainer>
                 <Description>{card.description}</Description>

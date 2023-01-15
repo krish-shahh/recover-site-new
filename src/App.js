@@ -35,7 +35,7 @@ import Hero from "components/hero/TwoColumnWithInput.js";
 // import Features from "components/features/ThreeColWithSideImage.js";
 // import Features from "components/features/ThreeColWithSideImageWithPrimaryBackground.js";
 // import Features from "components/features/VerticalWithAlternateImageAndText.js";
-// import Features from "components/features/DashedBorderSixFeatures";
+ import Features from "components/features/DashedBorderSixFeatures";
 // import MainFeature from "components/features/TwoColWithButton.js";
 // import MainFeature from "components/features/TwoColSingleFeatureWithStats.js";
 // import MainFeature2 from "components/features/TwoColSingleFeatureWithStats2.js";
@@ -134,6 +134,7 @@ export default function App() {
             <Route path='/terms' element={<TermsOfServicePage />} />
             <Route path='/privacy' element={<PrivacyPolicyPage />} />
             <Route path='/search' element={<SearchPage />} />
+            <Route path='/cards' element={<Features />} />
           </Routes>
         </AuthContextProvider>
       </Router>

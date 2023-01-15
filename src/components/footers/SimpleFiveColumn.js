@@ -86,7 +86,7 @@ export default () => {
               <Link href="/sponsor">Become a Sponsor</Link>
             </LinkListItem>
             <LinkListItem>
-              <Link href="/login">Search</Link>
+              <Link href="/search">Search</Link>
             </LinkListItem>
             <LinkListItem>
               <Link href="/events">Events</Link>
