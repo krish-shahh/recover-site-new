@@ -42,7 +42,7 @@ export default () => {
       />
       <SingleColAbout />
       <br></br><br></br><br></br><br></br><br></br>
-      <Heading2>Creators</Heading2>
+      <Heading2>Team</Heading2>
       <br></br><br></br>
       <Profile
         subheading={<Subheading>Krish Shah</Subheading>}
