@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import {css} from "styled-components/macro"; //eslint-disable-line
@@ -12,6 +12,8 @@ import Header from "components/headers/light.js";
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import Footer from "components/footers/SimpleFiveColumn";
 import { ReactComponent as RadioIcon } from "feather-icons/dist/icons/radio.svg";
+import { ReactComponent as TimeIcon } from "feather-icons/dist/icons/clock.svg";
+import {events_mock_data} from './events_mock_data.js'
 
 
 const Container = tw.div`relative`;
@@ -34,7 +36,7 @@ const Image = styled.div(props => [
   tw`bg-cover bg-center h-80 lg:h-64 rounded rounded-b-none`
 ]);
 
-const Details = tw.div`p-6 rounded border-2 border-t-0 rounded-t-none border-dashed border-primary-100 flex-1 flex flex-col items-center text-center lg:block lg:text-left`;
+const Details = tw.div`p-6 rounded border-2 border-t rounded-t border-dashed border-primary-100 flex-1 flex flex-col items-center text-center lg:block lg:text-left`;
 const MetaContainer = tw.div`flex items-center`;
 const Meta = styled.div`
   ${tw`text-secondary-100 font-medium text-sm flex items-center leading-none mr-6 last:mr-0`}
@@ -42,6 +44,7 @@ const Meta = styled.div`
     ${tw`w-4 h-4 mr-1`}
   }
 `;
+const Input = tw.input`w-full items-center text-center border-2 border-primary-500 rounded-full`;
 
 const Title = tw.h5`mt-4 leading-snug font-bold text-lg`;
 const Description = tw.p`mt-2 text-sm text-secondary-100`;
@@ -61,35 +64,9 @@ export default ({
   description = "Some events we found that will help in your journey to recover addiction",
 
 }) => {
-  const blogPosts = [
-    {
-      imageSrc:
-        "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-      author: "Adam Wathan",
-      category: "SEO",
-      title: "Optimizing your website for your main keyword",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      url: "https://reddit.com"
-    },
-    {
-      imageSrc:
-        "https://images.unsplash.com/photo-1479660095429-2cf4e1360472?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=80",
-      author: "Owais Khan",
-      category: "Advertising",
-      title: "Creating The perfect advertisement campaign",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      url: "https://timerse.com"
-    },
-    {
-      imageSrc:
-        "https://images.unsplash.com/photo-1579869847514-7c1a19d2d2ad?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80",
-      author: "Steve Schoger",
-      category: "Social Media",
-      title: "Efficient management of your social media assets",
-      description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      url: "https://timerse.com"
-    }
-  ];
+  const [events, setEvents] = useState(events_mock_data)
+  const [search, setSearch] = useState('');
+  
   return (
     <AnimationRevealPage>
       <Header />
@@ -104,24 +81,29 @@ export default ({
           <HeadingDescription>{description}</HeadingDescription>
         </HeadingInfoContainer>
         <ThreeColumn>
-          {blogPosts.map((post, index) => (
+          {events_mock_data.map((item, index) => (
             <Column key={index}>
               <Card>
-                <Image imageSrc={post.imageSrc} />
                 <Details>
                   <MetaContainer>
                     <Meta>
                       <UserIcon />
-                      <div>{post.author}</div>
+                      <div>{item.host}</div>
                     </Meta>
                     <Meta>
                       <TagIcon />
-                      <div>{post.category}</div>
+                      <div>{item.category}</div>
                     </Meta>
                   </MetaContainer>
-                  <Title>{post.title}</Title>
-                  <Description>{post.description}</Description>
-                  <Link href={post.url}>Read Post</Link>
+                  <Title>{item.title}</Title>
+                  <MetaContainer>
+                    <Meta>
+                        <TimeIcon />
+                        <div>{item.time}</div>
+                    </Meta>
+                  </MetaContainer>
+                  <Description>{item.description}</Description>
+                  <Link href={item.url} target="_blank">Read Post</Link>
                 </Details>
               </Card>
             </Column>
