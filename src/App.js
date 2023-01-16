@@ -126,7 +126,6 @@ export default function App() {
             <Route path="/components/:type/:name" element={<ComponentRenderer />} />
             <Route path="/" element={<MainLandingPage />} />
             <Route path='/about' element={<AboutPage />} />
-            <Route path='/login' element={<LoginPage />} />
             <Route path='/sponsor' element={<SponsorPage />} />
             <Route path='/resources' element={<ResourcesPage />} />
             <Route path='/events' element={<BlogIndexPage />} />
@@ -134,7 +133,6 @@ export default function App() {
             <Route path='/terms' element={<TermsOfServicePage />} />
             <Route path='/privacy' element={<PrivacyPolicyPage />} />
             <Route path='/search' element={<SearchPage />} />
-            <Route path='/cards' element={<Features />} />
           </Routes>
         </AuthContextProvider>
       </Router>

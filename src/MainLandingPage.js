@@ -139,7 +139,7 @@ export default ({
                 is dedicated to helping addicts find the resources needed to help them live in recovery. It connects people struggling with addiction to people who are willing to help support them. Our main goal is to make Sponsors easily available, provide resources needed to assist people with addiction, and promote sober events in our communities.
               </Description>
               <Actions>
-                <PrimaryButton href="/search" css="">
+                <PrimaryButton href="/about" css="">
                   Start Searching
                 </PrimaryButton>
                 <SecondaryButton href="/about">
