@@ -61,9 +61,7 @@ export default () => {
         textOnLeft={false}
       />
       
-      {/* <TeamCardGrid
-        subheading={<Subheading>Our Team</Subheading>}
-      /> */}
+
       <Footer />
       </Content>
     </AnimationRevealPage>
