@@ -86,7 +86,6 @@ export default ({ cards = null, heading = "Amazing Features", subheading = "Feat
     <Container>
       <ThreeColumnContainer>
         <Heading>{heading}</Heading>
-        {description && <Description>{description}</Description>}
         <VerticalSpacer />
         {cards.map((card, i) => (
           <Column key={i}>
@@ -95,9 +94,9 @@ export default ({ cards = null, heading = "Amazing Features", subheading = "Feat
                 <img src={card.imageSrc || defaultCardImage} alt="" />
               </span>
               <span className="textContainer">
-                <span className="title">{card.title || "Fully Secure"}</span>
+                <span className="title">{card.title}</span>
                 <p className="description">
-                  {card.description || "Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud."}
+                  {card.description}
                 </p>
               </span>
             </Card>
