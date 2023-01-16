@@ -153,7 +153,7 @@ export default () => {
                 <p className="description">
                   {item.bio}
                 </p>
-                <a href={`mailto:${item.email}?body=the_body_of_my_email&subject=the_subject_of_my_email`}>
+                <a href={`mailto:${item.email}`}>
                   <CardAction>
                     Contact Me
                   </CardAction>
