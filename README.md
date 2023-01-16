@@ -1,3 +1,13 @@
+# ReCover
+
+#### Mock Data: [mockaroo.com](https://www.mockaroo.com/) <br />
+#### Frontend: ReactJS <br />
+#### Backend: Firebase <br />
+#### Logos: Canva <br />
+#### Development Website: [recover-dev.netlify.app](https://recover-dev.netlify.app/)
+
+------------------------
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Script
