@@ -1,9 +1,9 @@
 # ReCover
 
-Mock Data: [mockaroo.com](https://www.mockaroo.com/) <br />
-Frontend: ReactJS <br />
-Backend: Firebase <br />
-Logos: Canva
+#### Mock Data: [mockaroo.com](https://www.mockaroo.com/) <br />
+#### Frontend: ReactJS <br />
+#### Backend: Firebase <br />
+#### Logos: Canva
 ------------------------
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
