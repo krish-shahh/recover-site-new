@@ -1,8 +1,8 @@
 # ReCover
 
-Mock Data from [mockaroo.com](https://www.mockaroo.com/)
-Frontend: ReactJS
-Backend: Firebase
+Mock Data from [mockaroo.com](https://www.mockaroo.com/) <br />
+Frontend: ReactJS <br />
+Backend: Firebase <br />
 Logos: Canva
 ------------------------
 
