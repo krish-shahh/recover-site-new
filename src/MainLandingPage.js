@@ -23,7 +23,7 @@ import logo from "images/logo.svg";
 import useInView from "helpers/useInView";
 import MiniCenteredFooter from ".//components/footers/SimpleFiveColumn"
 import Navigation from ".//components/headers/light.js"
-import Features from "components/features/ThreeColSimple.js";
+import Features from "components/features/ThreeColWithSideImage.js";
 
 
 import SupportIconImage from "images/support-icon.svg";
@@ -139,7 +139,7 @@ export default ({
                 is dedicated to helping addicts find the resources needed to help them live in recovery. It connects people struggling with addiction to people who are willing to help support them. Our main goal is to make Sponsors easily available, provide resources needed to assist people with addiction, and promote sober events in our communities.
               </Description>
               <Actions>
-                <PrimaryButton href="#" css="">
+                <PrimaryButton href="/search" css="">
                   Start Searching
                 </PrimaryButton>
                 <SecondaryButton href="/about">
@@ -154,27 +154,7 @@ export default ({
             </ImageColumn>
           </HeroRow>
 
-          <Features
-            heading="Who We Support"
-            cards={[
-              {
-                imageSrc: SupportIconImage,
-                title: "24/7 Support",
-                description: "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport"
-              },
-              {
-                imageSrc: ShieldIconImage,
-                title: "Strong Teams",
-                description: "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport"
-              },
-              {
-                imageSrc: CustomerLoveIconImage,
-                title: "Customer Satisfaction",
-                description: "Lorem ipsum donor amet siti ceali placeholder text alipiscing elit sed do eiusmod temport"
-              },
-            ]}
-            linkText=""
-          />
+          <Features />
 
           <MiniCenteredFooter />
 

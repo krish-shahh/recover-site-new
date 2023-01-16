@@ -85,7 +85,6 @@ export default ({ cards = null, heading = "Amazing Features", subheading = "Feat
   return (
     <Container>
       <ThreeColumnContainer>
-        {subheading && <Subheading>{subheading}</Subheading>}
         <Heading>{heading}</Heading>
         {description && <Description>{description}</Description>}
         <VerticalSpacer />
