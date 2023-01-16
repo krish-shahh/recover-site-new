@@ -104,7 +104,7 @@ export default ({
             <Description>{description}</Description>
             <Links>
               {links.map((link, linkIndex) => (
-                <a key={linkIndex} className="link" href={link.url}>
+                <a key={linkIndex} className="link" href={link.url} target="_blank">
                   <link.icon className="icon" />
                 </a>
               ))}

@@ -94,7 +94,7 @@ import Hero from "components/hero/TwoColumnWithInput.js";
 import LoginPage from "pages/SearchSignIn";
 // import SignupPage from "pages/Signup.js";
 // import PricingPage from "pages/Pricing.js";
-import AboutUsPage from "pages/AboutUs.js";
+// import AboutUsPage from "pages/AboutUs.js";
 import SponsorPage from "pages/Sponsor.js"
 import ContactUsPage from "pages/ContactUs.js";
 import ResourcesPage from 'pages/Resources.js';
