@@ -57,12 +57,12 @@ export default ({
         q2answer
     },
     {
-      question: "Why did we make this website?",
+      question: "Why was this website made?",
       answer:
         "We made ReCover so that addicts could get in contact with potential sponsors as fast as possible."
     },
     {
-      question: "What information do you need to provide?",
+      question: "What information do we need to provide?",
       answer:
         "For addicts, ReCover asks for your state to display the closest sponsor. We do not track your precise location. Sponsors are only required to provide minimal information, such as their state and contact information."
     }
