@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c61fe05b.css",
-    "main.js": "/static/js/main.75e01fdf.js",
+    "main.js": "/static/js/main.383b5eaf.js",
     "static/media/AgencyLandingPage.jpeg": "/static/media/AgencyLandingPage.717f8ed6737d6161b153.jpeg",
     "static/media/HotelTravelLandingPage.jpeg": "/static/media/HotelTravelLandingPage.7cba2215c02e6e82fc39.jpeg",
     "static/media/PrivacyPolicyPage.jpeg": "/static/media/PrivacyPolicyPage.87eaa1f87d0f370b9a87.jpeg",
@@ -24,7 +24,7 @@
     "static/media/SignupPage.jpeg": "/static/media/SignupPage.65adc9dfaf5552e767ea.jpeg",
     "static/media/email-illustration.svg": "/static/media/email-illustration.84fb82b841c197337a4bc2c1e660d5a0.svg",
     "static/media/LoginPage.jpeg": "/static/media/LoginPage.833169df5e8e9f047b15.jpeg",
-    "static/media/logo.png": "/static/media/logo.81163b97d6b2c22b547e.png",
+    "static/media/logo.png": "/static/media/logo.ea9a8109b75d3956ade7.png",
     "static/media/customers-logo-strip.png": "/static/media/customers-logo-strip.680ac7c2e8ae28161d2c.png",
     "static/media/prototype-illustration.svg": "/static/media/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg",
     "static/media/team-illustration-2.svg": "/static/media/team-illustration-2.76aa0427e037826d4453f8791ee544e3.svg",
@@ -95,10 +95,10 @@
     "static/media/arrow-right-3-icon.svg": "/static/media/arrow-right-3-icon.d415f77e8dc81ff77fdb53c0ee2da771.svg",
     "static/media/handle-icon.svg": "/static/media/handle-icon.75eb6395a03cd55833f64fd24df39ff5.svg",
     "main.c61fe05b.css.map": "/static/css/main.c61fe05b.css.map",
-    "main.75e01fdf.js.map": "/static/js/main.75e01fdf.js.map"
+    "main.383b5eaf.js.map": "/static/js/main.383b5eaf.js.map"
   },
   "entrypoints": [
     "static/css/main.c61fe05b.css",
-    "static/js/main.75e01fdf.js"
+    "static/js/main.383b5eaf.js"
   ]
 }
