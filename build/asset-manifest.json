@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c61fe05b.css",
-    "main.js": "/static/js/main.383b5eaf.js",
+    "main.js": "/static/js/main.df372161.js",
     "static/media/AgencyLandingPage.jpeg": "/static/media/AgencyLandingPage.717f8ed6737d6161b153.jpeg",
     "static/media/HotelTravelLandingPage.jpeg": "/static/media/HotelTravelLandingPage.7cba2215c02e6e82fc39.jpeg",
     "static/media/PrivacyPolicyPage.jpeg": "/static/media/PrivacyPolicyPage.87eaa1f87d0f370b9a87.jpeg",
@@ -37,11 +37,16 @@
     "static/media/server-secure-illustration.svg": "/static/media/server-secure-illustration.7c9a441e69a156e36492100dee01526e.svg",
     "static/media/server-redundancy-illustration.svg": "/static/media/server-redundancy-illustration.c60061a07bc1cae436e557144949fd62.svg",
     "static/media/customer-support-illustration.svg": "/static/media/customer-support-illustration.7164659e338b9013dc196213c60c8ad2.svg",
+    "static/media/link-icon.svg": "/static/media/link-icon.ba45f5da487a185e66994de8168f8ea0.svg",
     "static/media/celebration-icon.svg": "/static/media/celebration-icon.0d9bb9633fcda75b7632a11eaf12bbac.svg",
+    "static/media/money-icon.svg": "/static/media/money-icon.080b27f9dedf0be70c3ee5d089c2970c.svg",
+    "static/media/event-icon.svg": "/static/media/event-icon.86e808eecc4691e709214b74809ecf33.svg",
     "static/media/chef-icon.svg": "/static/media/chef-icon.866e076bd2347712ef1d5cb77189d5fb.svg",
     "index.html": "/index.html",
     "static/media/shop-icon.svg": "/static/media/shop-icon.048628c95dd89e631ac8c652d04238fb.svg",
+    "static/media/heart-icon.svg": "/static/media/heart-icon.732ac5827d853ae1e99c9cda7b286217.svg",
     "static/media/pill.svg": "/static/media/pill.c9c614242cddafe36c4063bdf6425111.svg",
+    "static/media/search-icon.svg": "/static/media/search-icon.d25e4b16c6971954ff0456d4bf3a0759.svg",
     "static/media/email-newsletter-icon.svg": "/static/media/email-newsletter-icon.9dc376555e25ea4167ab7bed861fde55.svg",
     "static/media/github-icon.svg": "/static/media/github-icon.2012dbb259c77fd6aea5e21004ac0818.svg",
     "static/media/svg-decorator-blob-3.svg": "/static/media/svg-decorator-blob-3.de3cee31b9fcddf16b65056335c6f8e0.svg",
@@ -95,10 +100,10 @@
     "static/media/arrow-right-3-icon.svg": "/static/media/arrow-right-3-icon.d415f77e8dc81ff77fdb53c0ee2da771.svg",
     "static/media/handle-icon.svg": "/static/media/handle-icon.75eb6395a03cd55833f64fd24df39ff5.svg",
     "main.c61fe05b.css.map": "/static/css/main.c61fe05b.css.map",
-    "main.383b5eaf.js.map": "/static/js/main.383b5eaf.js.map"
+    "main.df372161.js.map": "/static/js/main.df372161.js.map"
   },
   "entrypoints": [
     "static/css/main.c61fe05b.css",
-    "static/js/main.383b5eaf.js"
+    "static/js/main.df372161.js"
   ]
 }
