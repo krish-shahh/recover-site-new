@@ -11,7 +11,7 @@ import { ReactComponent as GithubIcon } from "images/github-icon.svg";
 import { ReactComponent as Shop } from 'images/star-icon.svg';
 
 const Container = tw.div`relative`;
-const TwoColumn = tw.div`w-1/2 flex flex-col justify-center md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24 items-center`;
+const TwoColumn = tw.div`w-3/4 flex flex-col justify-center md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24 items-center`;
 const Column = tw.div`w-full max-w-md mx-auto md:max-w-none md:mx-0`;
 const ImageColumn = tw(Column)`md:w-4/12 flex-shrink-0 relative`;
 const TextColumn = styled(Column)(props => [

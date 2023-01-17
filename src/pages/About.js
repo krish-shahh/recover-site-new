@@ -32,36 +32,36 @@ export default () => {
     <AnimationRevealPage>
       <Header />
       <Content>
-      <MainFeature1
-        subheading={<Subheading>Our Mission</Subheading>}
-        description='We are committed to providing a safe and non-judgmental platform for individuals to seek help, connect with peers, and overcome addiction. We believe in the power of community and the strength of human connection to bring about lasting change. By creating a network of support and resources, we hope to empower individuals to take control of their lives and achieve lasting recovery. Together, we strive to break the cycle of addiction and pave the way for a fulfilling, substance-free life.'
-        buttonRounded={false}
-        primaryButtonText="See Portfolio"
-        imageSrc="https://www.newliferecoverycenter.net/wp-content/uploads/2022/10/addiction-recovery-program.jpeg"
-      />
-      <SingleColAbout />
-      <br></br><br></br><br></br><br></br><br></br>
-      <Heading2>Team</Heading2>
-      <br></br><br></br>
-      <Profile
-        subheading={<Subheading>Krish Shah</Subheading>}
-        heading="Founder and Lead Manager"
-        buttonRounded={false}
-        primaryButtonText="Contact Us"
-        imageSrc="https://github.com/krish-shahh.png"
-        textOnLeft={false}
-      />
-      <Profile2
-        subheading={<Subheading>Anish Sinha</Subheading>}
-        heading="Lead Full-Stack Developer"
-        buttonRounded={false}
-        primaryButtonText="Contact Us"
-        imageSrc="https://github.com/Anish701.png"
-        textOnLeft={false}
-      />
-      
+        <MainFeature1
+          subheading={<Subheading>Our Mission</Subheading>}
+          description='We are committed to providing a safe and non-judgmental platform for individuals to seek help, connect with peers, and overcome addiction. We believe in the power of community and the strength of human connection to bring about lasting change. By creating a network of support and resources, we hope to empower individuals to take control of their lives and achieve lasting recovery. Together, we strive to break the cycle of addiction and pave the way for a fulfilling, substance-free life.'
+          buttonRounded={false}
+          primaryButtonText="See Portfolio"
+          imageSrc="https://www.newliferecoverycenter.net/wp-content/uploads/2022/10/addiction-recovery-program.jpeg"
+        />
+        <SingleColAbout />
+        <br></br><br></br><br></br><br></br><br></br>
+        <Heading2>Team</Heading2>
+        <br></br><br></br>
+        <Profile
+          subheading={<Subheading>Krish Shah</Subheading>}
+          heading="Founder and Lead Manager"
+          buttonRounded={false}
+          primaryButtonText="Contact Us"
+          imageSrc="https://github.com/krish-shahh.png"
+          textOnLeft={false}
+        />
+        <Profile2
+          subheading={<Subheading>Anish Sinha</Subheading>}
+          heading="Lead Full-Stack Developer"
+          buttonRounded={false}
+          primaryButtonText="Contact Us"
+          imageSrc="https://github.com/Anish701.png"
+          textOnLeft={false}
+        />
 
-      <Footer />
+
+        <Footer />
       </Content>
     </AnimationRevealPage>
   );
