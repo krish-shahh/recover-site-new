@@ -33,9 +33,8 @@ export default () => {
       <Header />
       <Content>
       <MainFeature1
-        subheading={<Subheading>About ReCover</Subheading>}
-        heading="We help people on the path to recovery."
-        description='ReCover is dedicated to helping addicts find the resources needed to help them live in recovery. It connects people struggling with addiction to Sponsors who are willing to help support them. Our main goal is to make Sponsors easily available, provide resources needed to assist people with addiction, and promote sober events in our communities.'
+        subheading={<Subheading>Our Mission</Subheading>}
+        description='We are committed to providing a safe and non-judgmental platform for individuals to seek help, connect with peers, and overcome addiction. We believe in the power of community and the strength of human connection to bring about lasting change. By creating a network of support and resources, we hope to empower individuals to take control of their lives and achieve lasting recovery. Together, we strive to break the cycle of addiction and pave the way for a fulfilling, substance-free life.'
         buttonRounded={false}
         primaryButtonText="See Portfolio"
         imageSrc="https://www.newliferecoverycenter.net/wp-content/uploads/2022/10/addiction-recovery-program.jpeg"
