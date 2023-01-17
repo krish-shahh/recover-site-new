@@ -11,6 +11,11 @@ import defaultCardImage from "images/shield-icon.svg";
 import { ReactComponent as SvgDecoratorBlob3 } from "images/svg-decorator-blob-3.svg";
 
 import SupportIconImage from "images/support-icon.svg";
+import SearchIcon from "images/search-icon.svg";
+import EventIcon from "images/event-icon.svg";
+import HeartIcon from "images/heart-icon.svg";
+import MoneyIcon from "images/money-icon.svg";
+import LinkIcon from "images/link-icon.svg";
 import ShieldIconImage from "images/shield-icon.svg";
 import CustomizeIconImage from "images/customize-icon.svg";
 import FastIconImage from "images/fast-icon.svg";
@@ -68,16 +73,32 @@ export default ({ cards = null, heading = "Amazing Features", subheading = "Feat
    */
 
   const defaultCards = [
-    {
-      imageSrc: ShieldIconImage,
-      title: "Secure",
-      description: "We strictly only deal with vendors that provide top notch security."
+    { 
+      imageSrc: MoneyIcon, 
+      title: "Free",
+      description: "Our services will always be completely free of charge, to ensure that anyone in need can access the support they need to begin their journey to recovery." 
     },
-    { imageSrc: SupportIconImage, title: "24/7 Support" },
-    { imageSrc: CustomizeIconImage, title: "Customizable" },
-    { imageSrc: ReliableIconImage, title: "Reliable" },
-    { imageSrc: FastIconImage, title: "Fast" },
-    { imageSrc: SimpleIconImage, title: "Easy" }
+    {
+      imageSrc: SearchIcon,
+      title: "Search",
+      description: "We have created a search feature that allows individuals to find and connect with potential sponsors who match their specific needs and preferences."
+    },
+    { imageSrc: EventIcon, 
+      title: "Events",
+      description: "We have created an event listing feature that allows our users to easily find and connect with sober events in their local area and beyond." 
+    },
+    { imageSrc: HeartIcon, 
+      title: "Resources",
+      description: "We have created a self-guided resource page that provides a wide range of information, tools, and support, that users can access at their own pace and on their own terms, to help them navigate the recovery process." 
+    },
+    { imageSrc: LinkIcon, 
+      title: "Connection",
+      description: "By fostering a community of support and understanding, we believe that we can empower individuals to find the strength and resilience they need to overcome addiction and achieve lasting recovery."
+    },
+    { imageSrc: SimpleIconImage, 
+      title: "User-Oriented",
+      description: "Through a user-oriented approach, we strive to create a platform that is accessible, personalized, and responsive to the unique needs and challenges of each individual in recovery." 
+    }
   ];
 
   if (!cards) cards = defaultCards;
