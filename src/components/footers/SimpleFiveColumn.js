@@ -49,13 +49,13 @@ export default () => {
             ReCover is dedicated to helping addicts find the resources needed to help them live in recovery.
           </CompanyDescription>
           <SocialLinksContainer>
-            <SocialLink href="https://facebook.com">
+            <SocialLink href="https://facebook.com" target="_blank">
               <FacebookIcon />
             </SocialLink>
-            <SocialLink href="https://twitter.com">
+            <SocialLink href="https://twitter.com" target="_blank">
               <TwitterIcon />
             </SocialLink>
-            <SocialLink href="https://youtube.com">
+            <SocialLink href="https://instagram.com" target="_blank">
               <YoutubeIcon />
             </SocialLink>
           </SocialLinksContainer>
