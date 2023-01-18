@@ -22,8 +22,6 @@ const FAQ = tw.div`cursor-pointer select-none mt-5 px-8 sm:px-10 py-5 sm:py-4 ro
 const Question = tw.dt`flex justify-between items-center`;
 const QuestionText = tw.span`text-lg lg:text-xl font-semibold`;
 
-const q2answer = "ReCover was developed by Founder Krish Shah and Lead Full-Stack Developer Anish Sinha. Personal profiles are listed in the About section."
-
 const QuestionToggleIcon = motion(styled.span`
   ${tw`ml-2 transition duration-300`}
   svg {
@@ -52,19 +50,39 @@ export default ({
         "ReCover is dedicated to helping addicts find the resources needed to help them live in recovery. It connects people struggling with addiction to people who are willing to help support them. Our main goal is to make Sponsors easily available, provide resources needed to assist people with addiction, and promote sober events in our communities. This website is a public bulletin. We encourage everyone to share their journey and help evolve the platform into a service that helps all."
     },
     {
-      question: "Who developed this website?",
-      answer:
-        q2answer
-    },
-    {
       question: "Why was this website made?",
       answer:
-        "We made ReCover so that addicts could get in contact with potential sponsors as fast as possible."
+        "ReCover was made to empower individuals struggling with addiction by connecting them with dedicated sponsors, providing access to essential resources, and fostering a community of support through promoting sober events. It was created with the belief that access to support and resources for addiction recovery should be available to all, regardless of financial means, and that the power of community and the strength of human connection can bring about lasting change. The website is user-oriented and it aims to create a platform that is accessible, personalized, and responsive to the unique needs and challenges of each individual in recovery."
     },
     {
       question: "What information do we need to provide?",
       answer:
-        "For addicts, ReCover asks for your state to display the closest sponsor. We do not track your precise location. Sponsors are only required to provide minimal information, such as their state and contact information."
+        "For addicts, ReCover asks for your addiction to display only the sponsors that are relevant to you. Sponsors are only required to provide minimal information: name, state, picture, addiction history, years clean, email, and small personal biography."
+    },
+    {
+      question: "How does ReCover connect me to a sponsor?",
+      answer:
+        "When you sign up for ReCover, you will be prompted to fill out a profile with information about your specific needs and preferences. Our search feature will then match you with potential sponsors who best align with your profile. You can then contact and connect with these sponsors directly through our platform."
+    },
+    {
+      question: "Are the resources on ReCover only for people struggling with alcohol addiction?",
+      answer:
+        "No, our resources are designed to support individuals struggling with any type of addiction, including but not limited to alcohol, drugs, gambling, and more."
+    },
+    {
+      question: "Are the events listed on ReCover only for people in recovery?",
+      answer:
+        "The events listed on ReCover are primarily sober events, which means they do not involve the use of drugs or alcohol. They are open to people in recovery, as well as anyone who is interested in a substance-free lifestyle."
+    },
+    {
+      question: "Is ReCover a substitute for professional help?",
+      answer:
+        "While ReCover can provide helpful resources, connections, and support, it is not a substitute for professional help. We strongly encourage anyone struggling with addiction to seek professional treatment and support."
+    },
+    {
+      question: "Is ReCover a free service?",
+      answer:
+        "Yes, ReCover is completely free of charge."
     }
   ]
 }) => {
