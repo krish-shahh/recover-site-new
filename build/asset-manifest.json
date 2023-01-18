@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c61fe05b.css",
-    "main.js": "/static/js/main.8a0ce6e5.js",
+    "main.js": "/static/js/main.c28cbb9e.js",
     "static/media/AgencyLandingPage.jpeg": "/static/media/AgencyLandingPage.717f8ed6737d6161b153.jpeg",
     "static/media/HotelTravelLandingPage.jpeg": "/static/media/HotelTravelLandingPage.7cba2215c02e6e82fc39.jpeg",
     "static/media/PrivacyPolicyPage.jpeg": "/static/media/PrivacyPolicyPage.87eaa1f87d0f370b9a87.jpeg",
@@ -37,16 +37,16 @@
     "static/media/server-secure-illustration.svg": "/static/media/server-secure-illustration.7c9a441e69a156e36492100dee01526e.svg",
     "static/media/server-redundancy-illustration.svg": "/static/media/server-redundancy-illustration.c60061a07bc1cae436e557144949fd62.svg",
     "static/media/customer-support-illustration.svg": "/static/media/customer-support-illustration.7164659e338b9013dc196213c60c8ad2.svg",
-    "static/media/link-icon.svg": "/static/media/link-icon.ba45f5da487a185e66994de8168f8ea0.svg",
+    "static/media/link-icon.svg": "/static/media/link-icon.6309c0ef185867845cf2f8775504d6fc.svg",
     "static/media/celebration-icon.svg": "/static/media/celebration-icon.0d9bb9633fcda75b7632a11eaf12bbac.svg",
-    "static/media/money-icon.svg": "/static/media/money-icon.080b27f9dedf0be70c3ee5d089c2970c.svg",
-    "static/media/event-icon.svg": "/static/media/event-icon.86e808eecc4691e709214b74809ecf33.svg",
+    "static/media/money-icon.svg": "/static/media/money-icon.295196b9225659d373c8fd5768b660ea.svg",
+    "static/media/event-icon.svg": "/static/media/event-icon.6009b0c0c2647b04fec115dcdd1cbbac.svg",
     "static/media/chef-icon.svg": "/static/media/chef-icon.866e076bd2347712ef1d5cb77189d5fb.svg",
     "index.html": "/index.html",
     "static/media/shop-icon.svg": "/static/media/shop-icon.048628c95dd89e631ac8c652d04238fb.svg",
-    "static/media/heart-icon.svg": "/static/media/heart-icon.732ac5827d853ae1e99c9cda7b286217.svg",
+    "static/media/heart-icon.svg": "/static/media/heart-icon.c45827e1e8e8cd3d234169d75472e69f.svg",
     "static/media/pill.svg": "/static/media/pill.c9c614242cddafe36c4063bdf6425111.svg",
-    "static/media/search-icon.svg": "/static/media/search-icon.d25e4b16c6971954ff0456d4bf3a0759.svg",
+    "static/media/search-icon.svg": "/static/media/search-icon.c948a664cca80c2345567d7e54a4dae9.svg",
     "static/media/email-newsletter-icon.svg": "/static/media/email-newsletter-icon.9dc376555e25ea4167ab7bed861fde55.svg",
     "static/media/github-icon.svg": "/static/media/github-icon.2012dbb259c77fd6aea5e21004ac0818.svg",
     "static/media/svg-decorator-blob-3.svg": "/static/media/svg-decorator-blob-3.de3cee31b9fcddf16b65056335c6f8e0.svg",
@@ -57,9 +57,9 @@
     "static/media/svg-decorator-blob-9.svg": "/static/media/svg-decorator-blob-9.8e136b6ba18ab63d97e6f62a68063192.svg",
     "static/media/twitter-icon.svg": "/static/media/twitter-icon.828ecd04e4d4a4b4704330d1b8b1ebb9.svg",
     "static/media/support-icon.svg": "/static/media/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg",
-    "static/media/simple-icon.svg": "/static/media/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg",
     "static/media/customize-icon.svg": "/static/media/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg",
     "static/media/svg-decorator-blob-5.svg": "/static/media/svg-decorator-blob-5.3175ec4088eed43061604a370e074787.svg",
+    "static/media/simple-icon.svg": "/static/media/simple-icon.e69c7773e309d28e999bbe0049237aa9.svg",
     "static/media/svg-decorator-blob-1.svg": "/static/media/svg-decorator-blob-1.882b52f533a5f881fbac3178df042bb0.svg",
     "static/media/shield-icon.svg": "/static/media/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg",
     "static/media/svg-decorator-blob-8.svg": "/static/media/svg-decorator-blob-8.46d53f6b637ec792eff69fa98170e560.svg",
@@ -100,10 +100,10 @@
     "static/media/arrow-right-3-icon.svg": "/static/media/arrow-right-3-icon.d415f77e8dc81ff77fdb53c0ee2da771.svg",
     "static/media/handle-icon.svg": "/static/media/handle-icon.75eb6395a03cd55833f64fd24df39ff5.svg",
     "main.c61fe05b.css.map": "/static/css/main.c61fe05b.css.map",
-    "main.8a0ce6e5.js.map": "/static/js/main.8a0ce6e5.js.map"
+    "main.c28cbb9e.js.map": "/static/js/main.c28cbb9e.js.map"
   },
   "entrypoints": [
     "static/css/main.c61fe05b.css",
-    "static/js/main.8a0ce6e5.js"
+    "static/js/main.c28cbb9e.js"
   ]
 }
