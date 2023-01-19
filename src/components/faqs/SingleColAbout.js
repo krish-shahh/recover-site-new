@@ -42,7 +42,6 @@ const DecoratorBlob2 = styled(SvgDecoratorBlob2)`
 export default ({
   subheading = "FAQS",
   heading = "Frequently Asked Questions",
-  description = "And we have got answers to all of them. Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   faqs = [
     {
       question: "What is ReCover?",
