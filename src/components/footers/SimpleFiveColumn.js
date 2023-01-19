@@ -99,6 +99,9 @@ export default () => {
               <Link href="/resources">Resources</Link>
             </LinkListItem>
             <LinkListItem>
+              <Link href="/">Feedback</Link>
+            </LinkListItem>
+            <LinkListItem>
               <Link href="/terms">Terms of Service</Link>
             </LinkListItem>
           </LinkList>
