@@ -103,6 +103,7 @@ import BlogIndexPage from "pages/BlogIndex.js";
 import TermsOfServicePage from "pages/TermsOfService.js";
 import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 import SearchPage from "pages/Search.js"
+import FeedbackPage from "pages/Feedback.js"
 
 import ComponentRenderer from "ComponentRenderer.js";
 import MainLandingPage from "MainLandingPage.js";
@@ -133,6 +134,7 @@ export default function App() {
             <Route path='/terms' element={<TermsOfServicePage />} />
             <Route path='/privacy' element={<PrivacyPolicyPage />} />
             <Route path='/search' element={<SearchPage />} />
+            <Route path='/feedback' element={<FeedbackPage />} />
           </Routes>
         </AuthContextProvider>
       </Router>
