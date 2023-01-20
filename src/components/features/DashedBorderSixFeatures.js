@@ -99,53 +99,53 @@ export default () => {
       <ThreeColumnContainer>
         <UpdateNotice>
           <UpdateNoticeIcon />
-            Disclaimer: The data and information displayed on this website are for demonstration purposes only and are not intended to represent real-world data or information. 
+          Disclaimer: The data and information displayed on this website are for demonstration purposes only and are not intended to represent real-world data or information.
         </UpdateNotice>
         <Heading>
-            <Input 
-                type={"text"}
-                onChange={(e) => setSearch(e.target.value)}
-                placeholder='Search by State'
-            />
+          <Input
+            type={"text"}
+            onChange={(e) => setSearch(e.target.value)}
+            placeholder='Search by State'
+          />
         </Heading>
         {mock_data.filter((item) => {
-                    return search.toLowerCase() === ''
-                    ? item
-                    : item.location.toLowerCase().includes(search.toLowerCase());
-                })
-                .map((item, index) => (
-          <Column key={index}>
-            <Card>
-              <span className="imageContainer">
-                <img src={item.profile} alt={item.name} />
-              </span>
-              <span className="textContainer">
-              <CardHeader>
-                  <CardCompany>{item.name}</CardCompany>
-                  <CardType>{item.location}</CardType>
-              </CardHeader>
-              <CardMeta>
-                <CardMetaFeature>
-                  <PillIcon /> {item.history}
-                </CardMetaFeature>
-              </CardMeta>
-              <CardMeta>
-                <CardMetaFeature>
-                  <TimeIcon /> {item.years} Years Clean
-                </CardMetaFeature>
-              </CardMeta>
-                <p className="description">
-                  {item.bio}
-                </p>
-                <a href={`mailto:${item.email}`}>
-                  <CardAction>
-                    Contact Me
-                  </CardAction>
-                </a>
-              </span>
-            </Card>
-          </Column>
-        ))}
+          return search.toLowerCase() === ''
+            ? item
+            : item.location.toLowerCase().includes(search.toLowerCase());
+        })
+          .map((item, index) => (
+            <Column key={index}>
+              <Card>
+                <span className="imageContainer">
+                  <img src={item.profile} alt={item.name} />
+                </span>
+                <span className="textContainer">
+                  <CardHeader>
+                    <CardCompany>{item.name}</CardCompany>
+                    <CardType>{item.location}</CardType>
+                  </CardHeader>
+                  <CardMeta>
+                    <CardMetaFeature>
+                      <PillIcon /> {item.history}
+                    </CardMetaFeature>
+                  </CardMeta>
+                  <CardMeta>
+                    <CardMetaFeature>
+                      <TimeIcon /> {item.years} Years Clean
+                    </CardMetaFeature>
+                  </CardMeta>
+                  <p className="description">
+                    {item.bio}
+                  </p>
+                  <a href={`mailto:${item.email}`}>
+                    <CardAction>
+                      Contact Me
+                    </CardAction>
+                  </a>
+                </span>
+              </Card>
+            </Column>
+          ))}
       </ThreeColumnContainer>
       <DecoratorBlob />
     </Container>

@@ -56,9 +56,11 @@ const ActionButton = tw(
   AnchorLink
 )`px-8 py-3 font-bold rounded bg-red-700 text-gray-100 hocus:bg-red-900 hocus:text-gray-200 focus:shadow-outline focus:outline-none transition duration-300 mt-12 inline-block tracking-wide text-center px-10 py-4 font-semibold tracking-normal`;
 const PrimaryButton = tw(ActionButton)``;
+const PrimaryButton2 = styled(PrimaryButton).attrs({ as: "a" })``;
 const SecondaryButton = tw(
   ActionButton
 )`mt-6 sm:mt-12 sm:ml-8 bg-gray-300 text-gray-800 hocus:bg-gray-400 hocus:text-gray-900`;
+const SecondaryButton2 = styled(SecondaryButton).attrs({ as: "a" })``;
 const ImageColumn = tw(Column)`mx-auto lg:mr-0 relative mt-16 lg:mt-0 lg:ml-8`;
 const ImageContainer = tw.div``;
 const Image = tw.img`max-w-full rounded-t sm:rounded`;
@@ -129,7 +131,7 @@ export default ({
     <AnimationRevealPage disabled>
       <Container tw="bg-gray-100 -mx-8 -mt-8 pt-8 px-8">
         <Content>
-        <Navigation />
+          <Navigation />
           <HeroRow>
             <TextColumn>
               <Heading as="h1">
@@ -139,12 +141,12 @@ export default ({
                 is dedicated to helping addicts find the resources needed to help them live in recovery. It connects people struggling with addiction to people who are willing to help support them. Our main goal is to make Sponsors easily available, provide resources needed to assist people with addiction, and promote sober events in our communities.
               </Description>
               <Actions>
-                <PrimaryButton href="/search" target="_self">
+                <PrimaryButton2 href="/search" target="_self">
                   Start Searching
-                </PrimaryButton>
-                <SecondaryButton href="/about" target="_self">
+                </PrimaryButton2>
+                <SecondaryButton2 href="/about" target="_self">
                   Learn More
-                </SecondaryButton>
+                </SecondaryButton2>
               </Actions>
             </TextColumn>
             <ImageColumn>
