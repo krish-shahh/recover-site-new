@@ -6,7 +6,7 @@ const Content = tw.div`max-w-screen-xl mx-auto`;
 export default () => {
     const [contacts, setContacts] = useState(mock_data);
     const [search, setSearch] = useState('');
-    
+
     return (
         <Content>
             <br />
@@ -19,7 +19,7 @@ export default () => {
             </form>
             <br />
 
-            <div className="clearfix">
+      <div className="clearfix">
         <div className="row">
         {mock_data.filter((item) => {
                     return search.toLowerCase() === ''
