@@ -35,7 +35,7 @@ import Hero from "components/hero/TwoColumnWithInput.js";
 // import Features from "components/features/ThreeColWithSideImage.js";
 // import Features from "components/features/ThreeColWithSideImageWithPrimaryBackground.js";
 // import Features from "components/features/VerticalWithAlternateImageAndText.js";
- import Features from "components/features/DashedBorderSixFeatures";
+import Features from "components/features/DashedBorderSixFeatures";
 // import MainFeature from "components/features/TwoColWithButton.js";
 // import MainFeature from "components/features/TwoColSingleFeatureWithStats.js";
 // import MainFeature2 from "components/features/TwoColSingleFeatureWithStats2.js";
@@ -104,6 +104,8 @@ import TermsOfServicePage from "pages/TermsOfService.js";
 import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 import SearchPage from "pages/Search.js"
 import FeedbackPage from "pages/Feedback.js"
+
+import TestEventsPage from "pages/TestEvents.js"
 
 import ComponentRenderer from "ComponentRenderer.js";
 import MainLandingPage from "MainLandingPage.js";

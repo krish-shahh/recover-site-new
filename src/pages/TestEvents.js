@@ -80,7 +80,9 @@ export default ({
             <HeadingTitle>{heading}</HeadingTitle>
             <HeadingDescription>{description}</HeadingDescription>
           </HeadingInfoContainer>
-          <ThreeColumn>
+          <h1>Test</h1>
+          <HeadingDescription>test</HeadingDescription>
+          {/* <ThreeColumn>
             {events_mock_data.map((item, index) => (
               <Column key={index}>
                 <Card>
@@ -108,7 +110,7 @@ export default ({
                 </Card>
               </Column>
             ))}
-          </ThreeColumn>
+          </ThreeColumn> */}
         </Content>
         <DecoratorBlob1 />
         <DecoratorBlob2 />
