@@ -43,6 +43,21 @@ const Column = styled.div`
   ${tw`md:w-1/2 lg:w-1/3 px-6 flex`}
 `;
 
+export const NavLink = tw.a`
+  text-lg my-2 lg:text-sm lg:mx-6 lg:my-0
+  font-semibold tracking-wide transition duration-300
+  pb-1 border-b-2 border-transparent hover:border-red-500 hocus:text-red-500
+`;
+
+// const PrimaryNavLink = tw(
+//   NavLink
+// )`text-gray-100 bg-primary-500 px-6 py-3 border-none rounded hocus:bg-primary-900 focus:shadow-outline mt-6 md:mt-4 lg:mt-0`;
+const PrimaryNavLink = tw(
+  NavLink
+)`text-gray-100 bg-red-700 px-6 py-3 border-none rounded hocus:bg-red-900 focus:shadow-outline mt-6 md:mt-4 lg:mt-0`;
+
+const PrimaryButton = tw(PrimaryButtonBase)`mt-8 md:mt-10 text-sm inline-block mx-auto md:mx-0`;
+
 const Card = styled.div`
   ${tw`flex flex-col mx-auto max-w-xs items-center px-6 py-10 border-2 border-dashed border-primary-500 rounded-lg mt-12`}
   .imageContainer {
@@ -91,6 +106,7 @@ export default () => {
     const [q, setQ] = useState("");
     const [searchParam] = useState(["history"]);
     const [filterParam, setFilterParam] = useState(["All"]);
+    const [paginate, setpaginate] = useState(6);
 
     useEffect(() => {
         fetch(
@@ -134,6 +150,10 @@ export default () => {
             }
         });
     }
+
+    const load_more = (event) => {
+      setpaginate((prevValue) => prevValue + 6);
+  };
 
     if (error) {
         return (
@@ -221,7 +241,7 @@ export default () => {
             <option value="WY">Wyoming</option>
            </Select>
           </Heading>
-        {search(data).map((item) => (
+        {search(data).slice(0, paginate).map((item) => (
             <Column key={item.id}>
               <Card>
                 <span className="imageContainer">
@@ -254,6 +274,7 @@ export default () => {
               </Card>
             </Column>
           ))}
+          <PrimaryButton onClick={load_more}>Load More</PrimaryButton>
       </ThreeColumnContainer>
       <DecoratorBlob />
     </Container>
