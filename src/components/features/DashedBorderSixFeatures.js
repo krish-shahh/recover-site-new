@@ -274,7 +274,7 @@ export default () => {
               </Card>
             </Column>
           ))}
-          <PrimaryButton onClick={load_more}>Load More</PrimaryButton>
+            <PrimaryButton onClick={load_more}>Load More Sponsors</PrimaryButton>
       </ThreeColumnContainer>
       <DecoratorBlob />
     </Container>
