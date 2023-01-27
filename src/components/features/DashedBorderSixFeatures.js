@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 //eslint-disable-next-line
@@ -22,8 +22,10 @@ import { ReactComponent as PillIcon } from "images/pill.svg";
 import { ReactComponent as RadioIcon } from "feather-icons/dist/icons/radio.svg";
 
 
-const Input = tw.input`w-full items-center text-center border-2 border-primary-500 rounded-full`;
+const Input = tw.input`w-full items-center text-center border-2 border-primary-500 rounded-md`;
+const Select = tw.select`text-center border-2 border-primary-500 text-lg`;
 const Container = tw.div`relative`;
+const TwoColumn = tw.div`pt-24 pb-32 px-4 flex justify-between items-center flex-col lg:flex-row`;
 
 const ColumnNotice = tw.div`flex-1`;
 
@@ -84,16 +86,65 @@ const CardMetaFeature = styled.div`
 `;
 
 export default () => {
-  const [contacts, setContacts] = useState(mock_data);
-  const [search, setSearch] = useState('');
-  /*
-   * This componets has an array of object denoting the cards defined below. Each object in the cards array can have the key (Change it according to your need, you can also add more objects to have more cards in this feature component):
-   *  1) imageSrc - the image shown at the top of the card
-   *  2) title - the title of the card
-   *  3) description - the description of the card
-   *  If a key for a particular card is not provided, a default value is used
-   */
+  const [error, setError] = useState(null);
+    const [isLoaded, setIsLoaded] = useState(false);
+    const [items, setItems] = useState([]);
+    const [q, setQ] = useState("");
+    const [searchParam] = useState(["history"]);
+    const [filterParam, setFilterParam] = useState(["All"]);
 
+    useEffect(() => {
+        fetch(
+            "https://raw.githubusercontent.com/krish-shahh/data_example/main/sponsors_mock_data%20(4).json"
+        )
+            .then((res) => res.json())
+            .then(
+                (result) => {
+                    setIsLoaded(true);
+                    setItems(result);
+                },
+                (error) => {
+                    setIsLoaded(true);
+                    setError(error);
+                }
+            );
+    }, []);
+
+    const data = Object.values(items);
+
+    function search(items) {
+        return items.filter((item) => {
+            if (item.location == filterParam) {
+                return searchParam.some((newItem) => {
+                    return (
+                        item[newItem]
+                            .toString()
+                            .toLowerCase()
+                            .indexOf(q.toLowerCase()) > -1
+                    );
+                });
+            } else if (filterParam == "All") {
+                return searchParam.some((newItem) => {
+                    return (
+                        item[newItem]
+                            .toString()
+                            .toLowerCase()
+                            .indexOf(q.toLowerCase()) > -1
+                    );
+                });
+            }
+        });
+    }
+
+    if (error) {
+        return (
+            <p>
+                {error.message}, if you get this error, please go to the bottom of this page and click the contact link. Fill out the error and we will fix it as soon as we can. Thank you!
+            </p>
+        );
+    } else if (!isLoaded) {
+        return <>Loading...</>;
+    } else {
   return (
     <Container>
       <ThreeColumnContainer>
@@ -103,18 +154,75 @@ export default () => {
         </UpdateNotice>
         <Heading>
           <Input
-            type={"text"}
-            onChange={(e) => setSearch(e.target.value)}
-            placeholder='Search by State'
+            type="search"
+            name="search-form"
+            id="search-form"
+            placeholder='Addiction Search'
+            value={q}
+            onChange={(e) => setQ(e.target.value)}
           />
-        </Heading>
-        {mock_data.filter((item) => {
-          return search.toLowerCase() === ''
-            ? item
-            : item.location.toLowerCase().includes(search.toLowerCase());
-        })
-          .map((item, index) => (
-            <Column key={index}>
+          <Select
+              onChange={(e) => {
+                setFilterParam(e.target.value);
+              }}
+              aria-label="Filter By State"
+          >
+            <option value="All">Filter By State</option>
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+            <option value="CA">California</option>
+            <option value="CO">Colorado</option>
+            <option value="CT">Connecticut</option>
+            <option value="DE">Delaware</option>
+            <option value="DC">District Of Columbia</option>
+            <option value="FL">Florida</option>
+            <option value="GA">Georgia</option>
+            <option value="HI">Hawaii</option>
+            <option value="ID">Idaho</option>
+            <option value="IL">Illinois</option>
+            <option value="IN">Indiana</option>
+            <option value="IA">Iowa</option>
+            <option value="KS">Kansas</option>
+            <option value="KY">Kentucky</option>
+            <option value="LA">Louisiana</option>
+            <option value="ME">Maine</option>
+            <option value="MD">Maryland</option>
+            <option value="MA">Massachusetts</option>
+            <option value="MI">Michigan</option>
+            <option value="MN">Minnesota</option>
+            <option value="MS">Mississippi</option>
+            <option value="MO">Missouri</option>
+            <option value="MT">Montana</option>
+            <option value="NE">Nebraska</option>
+            <option value="NV">Nevada</option>
+            <option value="NH">New Hampshire</option>
+            <option value="NJ">New Jersey</option>
+            <option value="NM">New Mexico</option>
+            <option value="NY">New York</option>
+            <option value="NC">North Carolina</option>
+            <option value="ND">North Dakota</option>
+            <option value="OH">Ohio</option>
+            <option value="OK">Oklahoma</option>
+            <option value="OR">Oregon</option>
+            <option value="PA">Pennsylvania</option>
+            <option value="RI">Rhode Island</option>
+            <option value="SC">South Carolina</option>
+            <option value="SD">South Dakota</option>
+            <option value="TN">Tennessee</option>
+            <option value="TX">Texas</option>
+            <option value="UT">Utah</option>
+            <option value="VT">Vermont</option>
+            <option value="VA">Virginia</option>
+            <option value="WA">Washington</option>
+            <option value="WV">West Virginia</option>
+            <option value="WI">Wisconsin</option>
+            <option value="WY">Wyoming</option>
+           </Select>
+          </Heading>
+        {search(data).map((item) => (
+            <Column key={item.id}>
               <Card>
                 <span className="imageContainer">
                   <img src={item.profile} alt={item.name} />
@@ -150,4 +258,5 @@ export default () => {
       <DecoratorBlob />
     </Container>
   );
+  }
 };

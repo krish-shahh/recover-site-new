@@ -96,6 +96,9 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
       <NavLink href="/events">
         Events
       </NavLink>
+      <NavLink href="/forums">
+        Forums
+      </NavLink>
       <div tw="md:hidden flex-100 h-0"></div>
       <PrimaryNavLink href="/sponsor">
         Become a Sponsor

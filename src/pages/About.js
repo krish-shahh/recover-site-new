@@ -45,7 +45,7 @@ export default () => {
         <br></br><br></br>
         <Profile
           subheading={<Subheading>Krish Shah</Subheading>}
-          heading="Founder and Lead Manager"
+          heading="Founder and Lead Developer"
           buttonRounded={false}
           primaryButtonText="Contact Us"
           imageSrc="https://github.com/krish-shahh.png"
@@ -53,7 +53,7 @@ export default () => {
         />
         <Profile2
           subheading={<Subheading>Anish Sinha</Subheading>}
-          heading="Lead Full-Stack Developer"
+          heading="Full Stack Developer"
           buttonRounded={false}
           primaryButtonText="Contact Us"
           imageSrc="https://github.com/Anish701.png"

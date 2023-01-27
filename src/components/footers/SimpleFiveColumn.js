@@ -79,7 +79,7 @@ export default () => {
               <Link href="/privacy">Privacy Policy</Link>
             </LinkListItem>
             <LinkListItem>
-              <Link href="/">Forums</Link>
+              <Link href="/forums">Forums</Link>
             </LinkListItem>
           </LinkList>
         </Column>

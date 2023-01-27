@@ -92,6 +92,7 @@ import Features from "components/features/DashedBorderSixFeatures";
 
 /* Inner Pages */
 import LoginPage from "pages/SearchSignIn";
+import ForumsPage from "pages/Forums"
 // import SignupPage from "pages/Signup.js";
 // import PricingPage from "pages/Pricing.js";
 // import AboutUsPage from "pages/AboutUs.js";
@@ -137,6 +138,7 @@ export default function App() {
             <Route path='/privacy' element={<PrivacyPolicyPage />} />
             <Route path='/search' element={<SearchPage />} />
             <Route path='/feedback' element={<FeedbackPage />} />
+            <Route path='/forums' element={<ForumsPage />} />
           </Routes>
         </AuthContextProvider>
       </Router>
