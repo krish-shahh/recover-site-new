@@ -5,7 +5,6 @@ import tw from "twin.macro";
 import { css } from "styled-components/macro";
 import { SectionHeading } from "components/misc/Headings.js";
 import { PrimaryButton as PrimaryButtonBase } from "components/misc/Buttons.js";
-import { mock_data } from "./mock_data.js"
 
 import defaultCardImage from "../../images/shield-icon.svg";
 
@@ -22,7 +21,7 @@ import { ReactComponent as PillIcon } from "images/pill.svg";
 import { ReactComponent as RadioIcon } from "feather-icons/dist/icons/radio.svg";
 
 
-const Input = tw.input`w-full items-center text-center border-2 border-primary-500 rounded-md`;
+const Input = tw.input`p-4 w-full text-xl items-center text-center border-2 border-primary-500 rounded-md`;
 const Select = tw.select`text-center border-2 border-primary-500 text-lg`;
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`pt-24 pb-32 px-4 flex justify-between items-center flex-col lg:flex-row`;
@@ -86,7 +85,7 @@ const CardMetaFeature = styled.div`
 `;
 
 export default () => {
-  const [error, setError] = useState(null);
+    const [error, setError] = useState(null);
     const [isLoaded, setIsLoaded] = useState(false);
     const [items, setItems] = useState([]);
     const [q, setQ] = useState("");
@@ -157,7 +156,7 @@ export default () => {
             type="search"
             name="search-form"
             id="search-form"
-            placeholder='Addiction Search'
+            placeholder='Search by Addiction...'
             value={q}
             onChange={(e) => setQ(e.target.value)}
           />
@@ -167,7 +166,8 @@ export default () => {
               }}
               aria-label="Filter By State"
           >
-            <option value="All">Filter By State</option>
+            <option value="" disabled selected>Filter by State</option>
+            <option value="All">All States</option>
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option>
             <option value="AZ">Arizona</option>

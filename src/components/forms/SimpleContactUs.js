@@ -15,7 +15,7 @@ const FormContainer = styled.div`
   h2 {
     ${tw`text-3xl sm:text-4xl font-bold`}
   }
-  input,textarea {
+  input,textarea,select {
     ${tw`w-full bg-transparent text-gray-100 text-base font-medium tracking-wide border-b-2 py-2 text-gray-100 hocus:border-red-400 focus:outline-none transition duration-200`};
 
     ::placeholder {
@@ -29,6 +29,7 @@ const Column = tw.div`sm:w-5/12 flex flex-col`;
 const InputContainer = tw.div`relative py-5 mt-6`;
 const Label = tw.label`absolute top-0 left-0 tracking-wide font-semibold text-sm`;
 const Input = tw.input``;
+const Select = tw.select``;
 const TextArea = tw.textarea`h-24 sm:h-full resize-none`;
 const SubmitButton = tw.button`w-full sm:w-32 mt-6 py-3 bg-gray-100 text-primary-500 rounded-full font-bold tracking-wide shadow-lg uppercase text-sm transition duration-300 transform focus:outline-none focus:shadow-outline hover:bg-gray-300 hover:text-primary-700 hocus:-translate-y-px hocus:shadow-xl`;
 const ContentCopy = tw.div`max-w-screen-xl mx-auto`;
@@ -61,8 +62,61 @@ export default () => {
                 </Column>
                 <Column>
                   <InputContainer>
-                    <Label htmlFor="location-input">Location (State)</Label>
-                    <Input id="location" type="text" name="location" placeholder="New Jersey" required/>
+                    <Label htmlFor="location-input">Location</Label>
+                    <Select id="location" type="text" name="location" required>
+                      <option value="" disabled selected>Select your State</option>
+                      <option value="AL">Alabama</option>
+                      <option value="AK">Alaska</option>
+                      <option value="AZ">Arizona</option>
+                      <option value="AR">Arkansas</option>
+                      <option value="CA">California</option>
+                      <option value="CO">Colorado</option>
+                      <option value="CT">Connecticut</option>
+                      <option value="DE">Delaware</option>
+                      <option value="DC">District Of Columbia</option>
+                      <option value="FL">Florida</option>
+                      <option value="GA">Georgia</option>
+                      <option value="HI">Hawaii</option>
+                      <option value="ID">Idaho</option>
+                      <option value="IL">Illinois</option>
+                      <option value="IN">Indiana</option>
+                      <option value="IA">Iowa</option>
+                      <option value="KS">Kansas</option>
+                      <option value="KY">Kentucky</option>
+                      <option value="LA">Louisiana</option>
+                      <option value="ME">Maine</option>
+                      <option value="MD">Maryland</option>
+                      <option value="MA">Massachusetts</option>
+                      <option value="MI">Michigan</option>
+                      <option value="MN">Minnesota</option>
+                      <option value="MS">Mississippi</option>
+                      <option value="MO">Missouri</option>
+                      <option value="MT">Montana</option>
+                      <option value="NE">Nebraska</option>
+                      <option value="NV">Nevada</option>
+                      <option value="NH">New Hampshire</option>
+                      <option value="NJ">New Jersey</option>
+                      <option value="NM">New Mexico</option>
+                      <option value="NY">New York</option>
+                      <option value="NC">North Carolina</option>
+                      <option value="ND">North Dakota</option>
+                      <option value="OH">Ohio</option>
+                      <option value="OK">Oklahoma</option>
+                      <option value="OR">Oregon</option>
+                      <option value="PA">Pennsylvania</option>
+                      <option value="RI">Rhode Island</option>
+                      <option value="SC">South Carolina</option>
+                      <option value="SD">South Dakota</option>
+                      <option value="TN">Tennessee</option>
+                      <option value="TX">Texas</option>
+                      <option value="UT">Utah</option>
+                      <option value="VT">Vermont</option>
+                      <option value="VA">Virginia</option>
+                      <option value="WA">Washington</option>
+                      <option value="WV">West Virginia</option>
+                      <option value="WI">Wisconsin</option>
+                      <option value="WY">Wyoming</option>
+                    </Select>
                   </InputContainer>
                   <InputContainer>
                     <Label htmlFor="years-input">Years Sober</Label>
