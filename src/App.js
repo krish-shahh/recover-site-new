@@ -105,6 +105,7 @@ import TermsOfServicePage from "pages/TermsOfService.js";
 import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 import SearchPage from "pages/Search.js"
 import FeedbackPage from "pages/Feedback.js"
+import BlogPage from "pages/Blog.js"
 
 import TestEventsPage from "pages/TestEvents.js"
 
@@ -139,6 +140,7 @@ export default function App() {
             <Route path='/search' element={<SearchPage />} />
             <Route path='/feedback' element={<FeedbackPage />} />
             <Route path='/forums' element={<ForumsPage />} />
+            <Route path='/blog' element={<BlogPage />} />
 
           </Routes>
         </AuthContextProvider>
