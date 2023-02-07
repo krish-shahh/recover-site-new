@@ -21,8 +21,8 @@ import { ReactComponent as PillIcon } from "images/pill.svg";
 import { ReactComponent as RadioIcon } from "feather-icons/dist/icons/radio.svg";
 import { States } from "./states.js";
 
-const Input = tw.input`p-4 w-full text-xl items-center text-center border-2 border-primary-500 rounded-md`;
-const Select = tw.select`text-center border-2 border-primary-500 text-lg`;
+const Input = tw.input`p-4 w-full text-xl items-center text-center border-2 border-red-700 rounded-md font-black`;
+const Select = tw.select`text-center border-2 border-red-700 text-lg`;
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`pt-24 pb-32 px-4 flex justify-between items-center flex-col lg:flex-row`;
 
@@ -59,9 +59,9 @@ const PrimaryNavLink = tw(
 const PrimaryButton = tw(PrimaryButtonBase)`mt-8 md:mt-10 text-sm inline-block mx-auto md:mx-0`;
 
 const Card = styled.div`
-  ${tw`flex flex-col mx-auto max-w-xs items-center px-6 py-10 border-2 border-dashed border-primary-500 rounded-lg mt-12`}
+  ${tw`flex flex-col mx-auto max-w-xs items-center px-6 py-10 border-2 border-dashed border-red-700 rounded-lg mt-12`}
   .imageContainer {
-    ${tw`border-2 border-primary-500 text-center rounded-full p-6 flex-shrink-0 relative`}
+    ${tw`border-2 border-red-700 text-center rounded-full p-6 flex-shrink-0 relative`}
     img {
       ${tw`w-8 h-8`}
     }
@@ -72,7 +72,7 @@ const Card = styled.div`
   }
 
   .title {
-    ${tw`mt-2 font-bold text-xl leading-none text-primary-500`}
+    ${tw`mt-2 font-bold text-xl leading-none text-red-700`}
   }
 
   .description {
@@ -85,11 +85,11 @@ const DecoratorBlob = styled(SvgDecoratorBlob3)`
 `;
 
 const CardHeader = tw.div`flex justify-between items-center`;
-const CardCompany = tw.div`text-primary-500 font-bold text-lg`;
+const CardCompany = tw.div`text-red-700 font-bold text-lg`;
 const CardType = tw.div`font-semibold text-sm text-gray-600`;
 
 const CardMeta = styled.div`
-  ${tw`flex flex-row flex-wrap justify-center sm:items-center font-semibold tracking-wide text-gray-600 uppercase text-xs`}
+  ${tw`flex flex-row flex-wrap justify-center sm:items-center font-semibold tracking-wide text-black uppercase text-xs`}
 `;
 
 const CardMetaFeature = styled.div`

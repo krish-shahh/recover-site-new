@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.c61fe05b.css",
-    "main.js": "/static/js/main.4abc3239.js",
+    "main.js": "/static/js/main.0597b8d4.js",
     "static/media/AgencyLandingPage.jpeg": "/static/media/AgencyLandingPage.717f8ed6737d6161b153.jpeg",
     "static/media/HotelTravelLandingPage.jpeg": "/static/media/HotelTravelLandingPage.7cba2215c02e6e82fc39.jpeg",
     "static/media/PrivacyPolicyPage.jpeg": "/static/media/PrivacyPolicyPage.87eaa1f87d0f370b9a87.jpeg",
@@ -14,9 +14,9 @@
     "static/media/hero-screenshot-1.png": "/static/media/hero-screenshot-1.40a097b525c2f8c9808e.png",
     "static/media/AboutUsPage.jpeg": "/static/media/AboutUsPage.c9232ae2548e9f49c26b.jpeg",
     "static/media/BlogIndexPage.jpeg": "/static/media/BlogIndexPage.0f03fbdc27582d9a442b.jpeg",
+    "static/media/MainLandingPageHero.png": "/static/media/MainLandingPageHero.94fc172a4dd3e67a7576.png",
     "static/media/PricingPage.jpeg": "/static/media/PricingPage.c6e93374a0c9c5f10c44.jpeg",
     "static/media/hero-screenshot-2.png": "/static/media/hero-screenshot-2.241aac1fbc66db29d873.png",
-    "static/media/MainLandingPageHero.png": "/static/media/MainLandingPageHero.f772260d1b0a582b4d05.png",
     "static/media/ContactUsPage.jpeg": "/static/media/ContactUsPage.271456291b98013cc748.jpeg",
     "static/media/design-illustration-2.svg": "/static/media/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg",
     "static/media/stats-illustration.svg": "/static/media/stats-illustration.89e20edcbf2cccadc1f28b4a73a486ac.svg",
@@ -28,7 +28,7 @@
     "static/media/customers-logo-strip.png": "/static/media/customers-logo-strip.680ac7c2e8ae28161d2c.png",
     "static/media/prototype-illustration.svg": "/static/media/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg",
     "static/media/team-illustration-2.svg": "/static/media/team-illustration-2.76aa0427e037826d4453f8791ee544e3.svg",
-    "static/media/dot-pattern.svg": "/static/media/dot-pattern.ee6f4f0e6654d6e38850896165f9dc36.svg",
+    "static/media/dot-pattern.svg": "/static/media/dot-pattern.173641fccd80f857e649cd8ae13647aa.svg",
     "static/media/server-illustration-2.svg": "/static/media/server-illustration-2.759ff537a33274f6344f66aecc40dcac.svg",
     "static/media/love-illustration.svg": "/static/media/love-illustration.c759090fa833369ad6ffb6eb19cacb3e.svg",
     "static/media/login-illustration.svg": "/static/media/login-illustration.39a64f784d3474ef7b31bd14ad6360c7.svg",
@@ -60,10 +60,10 @@
     "static/media/customize-icon.svg": "/static/media/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg",
     "static/media/svg-decorator-blob-5.svg": "/static/media/svg-decorator-blob-5.3175ec4088eed43061604a370e074787.svg",
     "static/media/simple-icon.svg": "/static/media/simple-icon.e69c7773e309d28e999bbe0049237aa9.svg",
-    "static/media/svg-decorator-blob-1.svg": "/static/media/svg-decorator-blob-1.882b52f533a5f881fbac3178df042bb0.svg",
+    "static/media/svg-decorator-blob-1.svg": "/static/media/svg-decorator-blob-1.9ab437d4582eb0ad85c83d8679b106ad.svg",
     "static/media/shield-icon.svg": "/static/media/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg",
-    "static/media/svg-decorator-blob-8.svg": "/static/media/svg-decorator-blob-8.46d53f6b637ec792eff69fa98170e560.svg",
-    "static/media/svg-decorator-blob-7.svg": "/static/media/svg-decorator-blob-7.04fa60c9416090a003233f93c9de14b1.svg",
+    "static/media/svg-decorator-blob-8.svg": "/static/media/svg-decorator-blob-8.2bf34b8d7f50a7ce84c9dca492b47769.svg",
+    "static/media/svg-decorator-blob-7.svg": "/static/media/svg-decorator-blob-7.49148aa6cc2fadcc23d4cd3e81f1eefb.svg",
     "static/media/user-plus.svg": "/static/media/user-plus.7df9a289df2eaf4229e6091b340a9799.svg",
     "static/media/radio.svg": "/static/media/radio.597e1dfdc8fb7f6ca87d60a206b48cfb.svg",
     "static/media/youtube-icon.svg": "/static/media/youtube-icon.10cce4d9ddf73bc36fc6b15d5639c0ff.svg",
@@ -100,10 +100,10 @@
     "static/media/arrow-right-3-icon.svg": "/static/media/arrow-right-3-icon.d415f77e8dc81ff77fdb53c0ee2da771.svg",
     "static/media/handle-icon.svg": "/static/media/handle-icon.75eb6395a03cd55833f64fd24df39ff5.svg",
     "main.c61fe05b.css.map": "/static/css/main.c61fe05b.css.map",
-    "main.4abc3239.js.map": "/static/js/main.4abc3239.js.map"
+    "main.0597b8d4.js.map": "/static/js/main.0597b8d4.js.map"
   },
   "entrypoints": [
     "static/css/main.c61fe05b.css",
-    "static/js/main.4abc3239.js"
+    "static/js/main.0597b8d4.js"
   ]
 }

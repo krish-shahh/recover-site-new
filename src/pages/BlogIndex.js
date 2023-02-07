@@ -36,10 +36,16 @@ const Image = styled.div(props => [
   tw`bg-cover bg-center h-80 lg:h-64 rounded rounded-b-none`
 ]);
 
-const Details = tw.div`p-6 rounded border-2 border-t rounded-t border-dashed border-primary-100 flex-1 flex flex-col items-center text-center lg:block lg:text-left`;
+const Details = tw.div`p-6 rounded border-2 border-t rounded-t border-dashed border-red-700 flex-1 flex flex-col items-center text-center lg:block lg:text-left`;
 const MetaContainer = tw.div`flex items-center`;
 const Meta = styled.div`
   ${tw`text-secondary-100 font-medium text-sm flex items-center leading-none mr-6 last:mr-0`}
+  svg {
+    ${tw`w-4 h-4 mr-1`}
+  }
+`;
+const Meta2 = styled.div`
+  ${tw`text-black font-medium text-sm flex items-center leading-none mr-6 last:mr-0`}
   svg {
     ${tw`w-4 h-4 mr-1`}
   }
@@ -90,10 +96,10 @@ export default ({
                         <UserIcon />
                         <div>{item.host}</div>
                       </Meta>
-                      <Meta>
+                      <Meta2>
                         <TagIcon />
                         <div>{item.category}</div>
-                      </Meta>
+                      </Meta2>
                     </MetaContainer>
                     <Title>{item.title}</Title>
                     <MetaContainer>
