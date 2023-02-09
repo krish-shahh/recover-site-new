@@ -95,6 +95,16 @@ const ResizableBox = styled(Rnd)`
 `;
 const ResizeHandleButton = tw.button`cursor-col-resize focus:outline-none w-4 border-l bg-gray-100 absolute right-0 inset-y-0`;
 
+const CustomersLogoStrip = styled.div`
+  ${tw`mt-12 lg:mt-20`}
+  p {
+    ${tw`uppercase text-sm lg:text-xs tracking-wider font-bold text-gray-500`}
+  }
+  img {
+    ${tw`mt-4 w-full lg:pr-16 xl:pr-32 opacity-50`}
+  }
+`;
+
 export default ({
   features = null,
   landingPages = components.landingPages,

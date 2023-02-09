@@ -7,6 +7,8 @@ import LogoImage from "../../images/logo.png";
 import { ReactComponent as FacebookIcon } from "../../images/facebook-icon.svg";
 import { ReactComponent as TwitterIcon } from "../../images/twitter-icon.svg";
 import { ReactComponent as YoutubeIcon } from "../../images/youtube-icon.svg";
+import { ReactComponent as LinkedinIcon } from "../../images/linkedin-icon.svg";
+
 
 const Container = tw.div`relative bg-gray-200 -mx-8 -mb-8 px-8`;
 const FiveColumns = tw.div`max-w-screen-xl mx-auto py-16 lg:py-20 flex flex-wrap justify-between`;
@@ -49,14 +51,11 @@ export default () => {
             ReCover is dedicated to helping addicts find the resources needed to help them live in recovery.
           </CompanyDescription>
           <SocialLinksContainer>
-            <SocialLink href="https://facebook.com" target="_blank">
-              <FacebookIcon />
-            </SocialLink>
-            <SocialLink href="https://twitter.com" target="_blank">
+            <SocialLink href="https://twitter.com/ReCoverMain" target="_blank">
               <TwitterIcon />
             </SocialLink>
-            <SocialLink href="https://instagram.com" target="_blank">
-              <YoutubeIcon />
+            <SocialLink href="https://www.linkedin.com/company/recoveraddiction" target="_blank">
+              <LinkedinIcon />
             </SocialLink>
           </SocialLinksContainer>
         </WideColumn>
