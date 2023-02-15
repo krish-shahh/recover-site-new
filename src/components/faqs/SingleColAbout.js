@@ -82,6 +82,11 @@ export default ({
       question: "Is ReCover a free service?",
       answer:
         "Yes, ReCover is completely free of charge."
+    },
+    {
+      question: "Is addiction really a huge issue in the United States?",
+      answer:
+        "Yes, According to a January 4, 2023 press release by Substance Abuse and Mental Health Services Administration, 46.3 million people aged 12 or older (or 16.5 percent of the population) met the applicable DSM-5 criteria for having a substance use disorder in the past year. In 2021, 94% of people aged 12 or older with a substance use disorder did not receive any treatment."
     }
   ]
 }) => {

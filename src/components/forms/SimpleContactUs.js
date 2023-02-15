@@ -85,6 +85,15 @@ export default () => {
                     <Label htmlFor="message-input">Brief Biography</Label>
                     <TextArea id="message" maxLength={140} name="message" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." required/>
               </InputContainer>
+              <TwoColumn>
+                <Column>
+                  <InputContainer>
+                      <Input id="agree" type="checkbox" name="agree" required/>
+                      <br />
+                      <Label for="agree">By checking this box, you are agreeing to our terms of service and privacy policy.</Label>
+                  </InputContainer>
+                </Column>
+              </TwoColumn>
 
               <SubmitButton type="submit">Submit</SubmitButton>
             </form>
