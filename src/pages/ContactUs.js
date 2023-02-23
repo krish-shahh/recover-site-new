@@ -11,7 +11,14 @@ export default () => {
   return (
     <AnimationRevealPage>
       <Header />
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeFvRyTyokBHI8OJzUKxXx6qlvbzapZgivY97kOdCqSprMeew/viewform?embedded=true" width="100%" height="809" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+      <div style={{ height: "800px" }}>
+        <iframe
+          src="https://calendly.com/recoverapp/general"
+          width="100%"
+          height="100%"
+          frameborder="0"
+        >Loading...</iframe>
+      </div>
       <Content>
         <Footer />
       </Content>

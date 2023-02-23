@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, setState } from "react";
 import styled from "styled-components";
 import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import {ReactComponent as SvgDotPatternIcon} from "../../images/dot-pattern.svg"
 import { States } from "../features/states.js"
+import {database} from './firebase'
+import {ref,push,child,update} from "firebase/database";
+
 
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-20 lg:py-24`;
@@ -39,6 +42,57 @@ const SvgDotPattern1 = tw(SvgDotPatternIcon)`absolute bottom-0 right-0 transform
 
 export default () => {
 
+  const [name, setName] = useState(null);
+  const [email, setEmail] = useState(null);
+  const [history,setHistory] = useState(null);
+  const [location,setLocation] = useState(null);
+  const [years, setYears] = useState(null);
+  const [profile, setProfile] = useState(null);
+  const [message, setMessage] = useState(null);
+
+  const handleInputChange = (e) => {
+    const {id , value} = e.target;
+    if(id === "name"){
+        setName(value);
+    }
+    if(id === "email"){
+        setEmail(value);
+    }
+    if(id === "history"){
+        setHistory(value);
+    }
+    if(id === "location"){
+        setLocation(value);
+    }
+    if(id === "years") {
+        setYears(value);
+    }
+    if(id === "profile") {
+        setProfile(value);
+    }
+    if(id === "message") {
+        setMessage(value);
+    }
+
+}
+
+const handleSubmit  = () => {
+  console.log(name,email,history,location,years,profile,message);
+  let obj = {
+    name : name,
+    email:email,
+    history:history,
+    location:location,
+    years: years,
+    profile:profile,
+    message: message,
+  }       
+  const newPostKey = push(child(ref(database), 'sponsors')).key;
+  const updates = {};
+  updates['/' + newPostKey] = obj
+  return update(ref(database), updates);
+}
+
   return (
     <Container>
       <Content>
@@ -50,21 +104,21 @@ export default () => {
                 <Column>
                   <InputContainer>
                     <Label htmlFor="name-input">Your Name</Label>
-                    <Input id="name" type="text" name="name" placeholder="John Doe" required/>
+                    <Input value={name} onChange = {(e) => handleInputChange(e)} id="name" type="text" name="name" placeholder="John Doe" required/>
                   </InputContainer>
                   <InputContainer>
                     <Label htmlFor="email-input">Your Email Address</Label>
-                    <Input id="email" type="email" name="email" placeholder="john@mail.com" required/>
+                    <Input value={email} onChange = {(e) => handleInputChange(e)} id="email" type="email" name="email" placeholder="john@mail.com" required/>
                   </InputContainer>
                   <InputContainer>
                     <Label htmlFor="history-input">Addiction History</Label>
-                    <Input id="history" type="text" name="history" placeholder="Alcohol" required/>
+                    <Input value={history} onChange = {(e) => handleInputChange(e)} id="history" type="text" name="history" placeholder="Alcohol" required/>
                   </InputContainer>
                 </Column>
                 <Column>
                   <InputContainer>
                     <Label htmlFor="location-input">Location</Label>
-                    <Select id="location" type="text" name="location" required>
+                    <Select value={location} onChange = {(e) => handleInputChange(e)} id="location" type="text" name="location" required>
                       <option value="" disabled selected>Select your State</option>
                       {States.map((element) => (
                         <option value={element.abbreviation}>{element.name}</option>
@@ -73,29 +127,20 @@ export default () => {
                   </InputContainer>
                   <InputContainer>
                     <Label htmlFor="years-input">Years Sober</Label>
-                    <Input id="years" type="number" name="years" placeholder="1" min="1" required/>
+                    <Input value={years} onChange = {(e) => handleInputChange(e)} id="years" type="number" name="years" placeholder="1" min="1" required/>
                   </InputContainer>
                   <InputContainer>
                     <Label htmlFor="profile-input">Profile Picture</Label>
-                    <Input id="profile" type="file" accept="image/*" name="profile" required/>
+                    <Input value={profile} onChange = {(e) => handleInputChange(e)} id="profile" type="file" accept="image/*" name="profile" required/>
                   </InputContainer>
                 </Column>
               </TwoColumn>
               <InputContainer tw="flex-1">
                     <Label htmlFor="message-input">Brief Biography</Label>
-                    <TextArea id="message" maxLength={140} name="message" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." required/>
+                    <TextArea value={message} onChange = {(e) => handleInputChange(e)} id="message" maxLength={140} name="message" placeholder="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." required/>
               </InputContainer>
-              <TwoColumn>
-                <Column>
-                  <InputContainer>
-                      <Input id="agree" type="checkbox" name="agree" required/>
-                      <br />
-                      <Label for="agree">By checking this box, you are agreeing to our terms of service and privacy policy.</Label>
-                  </InputContainer>
-                </Column>
-              </TwoColumn>
 
-              <SubmitButton type="submit">Submit</SubmitButton>
+              <SubmitButton onClick={()=>handleSubmit()} type="submit">Submit</SubmitButton>
             </form>
           </div>
           <SvgDotPattern1 />

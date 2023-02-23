@@ -91,7 +91,6 @@ import Features from "components/features/DashedBorderSixFeatures";
 // import HostingCloudLandingPage from "demos/HostingCloudLandingPage.js";
 
 /* Inner Pages */
-import LoginPage from "pages/SearchSignIn";
 import ForumsPage from "pages/Forums"
 // import SignupPage from "pages/Signup.js";
 // import PricingPage from "pages/Pricing.js";
@@ -115,7 +114,6 @@ import ThankYouPage from "ThankYouPage.js";
 
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { AuthContextProvider } from "context/AuthContext";
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -125,7 +123,6 @@ export default function App() {
     <>
       <GlobalStyles />
       <Router>
-        <AuthContextProvider>
           <Routes>
             <Route path="/components/:type/:subtype/:name" element={<ComponentRenderer />} />
             <Route path="/components/:type/:name" element={<ComponentRenderer />} />
@@ -143,7 +140,6 @@ export default function App() {
             <Route path='/blog' element={<BlogPage />} />
 
           </Routes>
-        </AuthContextProvider>
       </Router>
     </>
   );

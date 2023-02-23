@@ -78,7 +78,7 @@ export default () => {
               <Link href="/privacy">Privacy Policy</Link>
             </LinkListItem>
             <LinkListItem>
-              <Link href="/forums">Forums</Link>
+              <Link href=" " target="_blank">Treatment</Link>
             </LinkListItem>
           </LinkList>
         </Column>
@@ -98,7 +98,7 @@ export default () => {
               <Link href="/resources">Resources</Link>
             </LinkListItem>
             <LinkListItem>
-              <Link href="/feedback">Feedback</Link>
+              <Link href="/feedback">Partnership</Link>
             </LinkListItem>
             <LinkListItem>
               <Link href="/terms">Terms of Service</Link>
