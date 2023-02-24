@@ -72,7 +72,7 @@ export default () => {
               <Link href="/contact">Contact</Link>
             </LinkListItem>
             <LinkListItem>
-              <Link href="/blog">Blog</Link>
+              <Link href="/forums">Community</Link>
             </LinkListItem>
             <LinkListItem>
               <Link href="/privacy">Privacy Policy</Link>
