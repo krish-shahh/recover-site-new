@@ -58,8 +58,7 @@ const ButtonContainer = tw.div`flex justify-center`;
 const LoadMoreButton = tw(PrimaryButton)`mt-16 mx-auto`;
 
 export default ({
-    headingText = "Web Resources",
-    headingText2 = "Lists of Centers/Clinics By Location",
+    headingText2 = "New York City Clinics and Rehab Centers",
 }) => {
     const [visible, setVisible] = useState(7);
     const onLoadMoreClick = () => {
@@ -75,38 +74,28 @@ export default ({
                     </HeadingRow>
                     <Posts>
                         <PostContainer featured={true}>
-                            <Post className="group" as="a" href="/resourcesboston" target="_blank">
-                                <Image2 imageSrc={"https://bdc2020.o0bc.com/wp-content/uploads/2022/03/Boston-Harbor-scaled-1-6307fa615b6ba.jpg"} />
+                            <Post className="group" as="a" href="" target="_blank">
+                                <Image2 imageSrc={""} />
                                 <Info>
                                     <Category></Category>
                                     <CreationDate></CreationDate>
-                                    <Title>{"Greater Boston"}</Title>
-                                    <Description>{"Click here for a list of trusted clinics and rehab centers in the Greater Boston Area."}</Description>
+                                    <Title>{"Clinic 1"}</Title>
+                                    <Description>{"Clinic 1 Description."}</Description>
                                 </Info>
                             </Post>
                         </PostContainer>
                         <PostContainer featured={true}>
-                            <Post className="group" as="a" href="/resourcesny" target="_blank">
-                                <Image2 imageSrc={"https://i.natgeofe.com/n/874df281-d3e0-489a-98c0-6b840023b828/newyork_NationalGeographic_2328428_2x1.jpg"} />
+                            <Post className="group" as="a" href="" target="_blank">
+                                <Image2 imageSrc={""} />
                                 <Info>
                                     <Category></Category>
                                     <CreationDate></CreationDate>
-                                    <Title>{"New York City"}</Title>
-                                    <Description>{"Click here for a list of trusted clinics and rehab centers in New York City."}</Description>
+                                    <Title>{"Clinic 2"}</Title>
+                                    <Description>{"Clinic 2 Description."}</Description>
                                 </Info>
                             </Post>
                         </PostContainer>
-                        <PostContainer featured={true}>
-                            <Post className="group" as="a" href="/resourcesnj" target="_blank">
-                                <Image2 imageSrc={"https://cdn.britannica.com/40/124040-050-1C958F63/Jersey-City-NJ.jpg"} />
-                                <Info>
-                                    <Category></Category>
-                                    <CreationDate></CreationDate>
-                                    <Title>{"New Jersey"}</Title>
-                                    <Description>{"Click here for a list of trusted clinics and rehab centers in New Jersey."}</Description>
-                                </Info>
-                            </Post>
-                        </PostContainer>
+
                     </Posts>
                 </ContentWithPaddingLg>
             </Container>

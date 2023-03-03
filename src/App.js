@@ -114,6 +114,9 @@ import ThankYouPage from "ThankYouPage.js";
 
 //RESORUCES
 import ResourcesHome from "pages/resources/ResourcesHome.js";
+import ClinicsBoston from "pages/resources/ClinicsBoston.js";
+import ClinicsNJ from "pages/resources/ClinicsNJ.js";
+import ClinicsNY from "pages/resources/ClinicsNY.js";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -141,6 +144,9 @@ export default function App() {
           <Route path='/forums' element={<ForumsPage />} />
           <Route path='/blog' element={<BlogPage />} />
           <Route path='/resourceshome' element={<ResourcesHome />} />
+          <Route path='/resourcesboston' element={<ClinicsBoston />} />
+          <Route path='/resourcesny' element={<ClinicsNY />} />
+          <Route path='/resourcesnj' element={<ClinicsNJ />} />
 
         </Routes>
       </Router>
