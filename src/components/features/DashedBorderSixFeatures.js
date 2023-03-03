@@ -100,100 +100,100 @@ const CardMetaFeature = styled.div`
 `;
 
 export default () => {
-    const [error, setError] = useState(null);
-    const [isLoaded, setIsLoaded] = useState(false);
-    const [items, setItems] = useState([]);
-    const [q, setQ] = useState("");
-    const [searchParam] = useState(["history"]);
-    const [filterParam, setFilterParam] = useState(["All"]);
-    const [paginate, setpaginate] = useState(6);
+  const [error, setError] = useState(null);
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [items, setItems] = useState([]);
+  const [q, setQ] = useState("");
+  const [searchParam] = useState(["history"]);
+  const [filterParam, setFilterParam] = useState(["All"]);
+  const [paginate, setpaginate] = useState(6);
 
-    useEffect(() => {
-        fetch(
-            "https://raw.githubusercontent.com/krish-shahh/data_example/main/sponsors_mock_data%20(4).json"
-        )
-            .then((res) => res.json())
-            .then(
-                (result) => {
-                    setIsLoaded(true);
-                    setItems(result);
-                },
-                (error) => {
-                    setIsLoaded(true);
-                    setError(error);
-                }
-            );
-    }, []);
+  useEffect(() => {
+    fetch(
+      "https://raw.githubusercontent.com/krish-shahh/data_example/main/sponsors_mock_data%20(4).json"
+    )
+      .then((res) => res.json())
+      .then(
+        (result) => {
+          setIsLoaded(true);
+          setItems(result);
+        },
+        (error) => {
+          setIsLoaded(true);
+          setError(error);
+        }
+      );
+  }, []);
 
-    const data = Object.values(items);
+  const data = Object.values(items);
 
-    function search(items) {
-        return items.filter((item) => {
-            if (item.location == filterParam) {
-                return searchParam.some((newItem) => {
-                    return (
-                        item[newItem]
-                            .toString()
-                            .toLowerCase()
-                            .indexOf(q.toLowerCase()) > -1
-                    );
-                });
-            } else if (filterParam == "All") {
-                return searchParam.some((newItem) => {
-                    return (
-                        item[newItem]
-                            .toString()
-                            .toLowerCase()
-                            .indexOf(q.toLowerCase()) > -1
-                    );
-                });
-            }
+  function search(items) {
+    return items.filter((item) => {
+      if (item.location == filterParam) {
+        return searchParam.some((newItem) => {
+          return (
+            item[newItem]
+              .toString()
+              .toLowerCase()
+              .indexOf(q.toLowerCase()) > -1
+          );
         });
-    }
+      } else if (filterParam == "All") {
+        return searchParam.some((newItem) => {
+          return (
+            item[newItem]
+              .toString()
+              .toLowerCase()
+              .indexOf(q.toLowerCase()) > -1
+          );
+        });
+      }
+    });
+  }
 
-    const load_more = (event) => {
-      setpaginate((prevValue) => prevValue + 6);
+  const load_more = (event) => {
+    setpaginate((prevValue) => prevValue + 6);
   };
 
-    if (error) {
-        return (
-            <p>
-                {error.message}, if you get this error, please go to the bottom of this page and click the contact link. Fill out the error and we will fix it as soon as we can. Thank you!
-            </p>
-        );
-    } else if (!isLoaded) {
-        return <>Loading...</>;
-    } else {
-  return (
-    <Container>
-      <ThreeColumnContainer>
-        <UpdateNotice>
-          <UpdateNoticeIcon />
-          Disclaimer: The data and information displayed on this website are for demonstration purposes only and are not intended to represent real-world data or information.
-        </UpdateNotice>
-        <Heading>
-          <Input
-            type="search"
-            name="search-form"
-            id="search-form"
-            placeholder='Search by Addiction...'
-            value={q}
-            onChange={(e) => setQ(e.target.value)}
-          />
-          <Select
+  if (error) {
+    return (
+      <p>
+        {error.message}, if you get this error, please go to the bottom of this page and click the contact link. Fill out the error and we will fix it as soon as we can. Thank you!
+      </p>
+    );
+  } else if (!isLoaded) {
+    return <>Loading...</>;
+  } else {
+    return (
+      <Container>
+        <ThreeColumnContainer>
+          <UpdateNotice>
+            <UpdateNoticeIcon />
+            Disclaimer: The data and information displayed on this website are for demonstration purposes only and are not intended to represent real-world data or information.
+          </UpdateNotice>
+          <Heading>
+            <Input
+              type="search"
+              name="search-form"
+              id="search-form"
+              placeholder='Search by Addiction...'
+              value={q}
+              onChange={(e) => setQ(e.target.value)}
+            />
+            <Select
               onChange={(e) => {
                 setFilterParam(e.target.value);
               }}
               aria-label="Filter By State"
-          >
-            <option value="" disabled selected>Filter by State</option>
-            <option value="All">All States</option>
-            {States.map((element) => (
+            >
+              <option value="" disabled selected>Filter by State</option>
+              <option value="All">All States</option>
+              {States.map((element) => (
                 <option value={element.abbreviation}>{element.name}</option>
-            ))}
-           </Select>
+              ))}
+            </Select>
           </Heading>
-        {search(data).slice(0, paginate).map((item) => (
+          {search(data).slice(0, paginate).map((item) => (
             <Column key={item.id}>
               <Card>
                 <span className="imageContainer">
@@ -226,10 +226,10 @@ export default () => {
               </Card>
             </Column>
           ))}
-            <PrimaryButton onClick={load_more}>Load More Sponsors</PrimaryButton>
-      </ThreeColumnContainer>
-      <DecoratorBlob />
-    </Container>
-  );
+          <PrimaryButton onClick={load_more}>Load More Sponsors</PrimaryButton>
+        </ThreeColumnContainer>
+        <DecoratorBlob />
+      </Container>
+    );
   }
 };

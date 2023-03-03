@@ -132,6 +132,17 @@ export default ({
                         <Heading>{headingText}</Heading>
                     </HeadingRow>
                     <Posts>
+                        <PostContainer featured={true}>
+                            <Post className="group" as="a" href="/resourceshome" target="_blank">
+                                <Image imageSrc={"https://www.logodesignlove.com/wp-content/uploads/2011/10/red-cross-logo.jpg"} />
+                                <Info>
+                                    <Category></Category>
+                                    <CreationDate></CreationDate>
+                                    <Title>{"ReCover's List of Trusted Rehab Centers"}</Title>
+                                    <Description>{"Click here for a list of trusted clinics and rehab centers filtered by location. You can browse through a comprehensive list of reputable rehab centers near you."}</Description>
+                                </Info>
+                            </Post>
+                        </PostContainer>
                         {posts.slice(0, visible).map((post, index) => (
                             <PostContainer key={index} featured={post.featured}>
                                 <Post className="group" as="a" href={post.url} target="_blank">

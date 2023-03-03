@@ -112,6 +112,8 @@ import ComponentRenderer from "ComponentRenderer.js";
 import MainLandingPage from "MainLandingPage.js";
 import ThankYouPage from "ThankYouPage.js";
 
+//RESORUCES
+import ResourcesHome from "pages/resources/ResourcesHome.js";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -123,23 +125,24 @@ export default function App() {
     <>
       <GlobalStyles />
       <Router>
-          <Routes>
-            <Route path="/components/:type/:subtype/:name" element={<ComponentRenderer />} />
-            <Route path="/components/:type/:name" element={<ComponentRenderer />} />
-            <Route path="/" element={<MainLandingPage />} />
-            <Route path='/about' element={<AboutPage />} />
-            <Route path='/sponsor' element={<SponsorPage />} />
-            <Route path='/resources' element={<ResourcesPage />} />
-            <Route path='/events' element={<BlogIndexPage />} />
-            <Route path='/contact' element={<ContactUsPage />} />
-            <Route path='/terms' element={<TermsOfServicePage />} />
-            <Route path='/privacy' element={<PrivacyPolicyPage />} />
-            <Route path='/search' element={<SearchPage />} />
-            <Route path='/feedback' element={<FeedbackPage />} />
-            <Route path='/forums' element={<ForumsPage />} />
-            <Route path='/blog' element={<BlogPage />} />
+        <Routes>
+          <Route path="/components/:type/:subtype/:name" element={<ComponentRenderer />} />
+          <Route path="/components/:type/:name" element={<ComponentRenderer />} />
+          <Route path="/" element={<MainLandingPage />} />
+          <Route path='/about' element={<AboutPage />} />
+          <Route path='/sponsor' element={<SponsorPage />} />
+          <Route path='/resources' element={<ResourcesPage />} />
+          <Route path='/events' element={<BlogIndexPage />} />
+          <Route path='/contact' element={<ContactUsPage />} />
+          <Route path='/terms' element={<TermsOfServicePage />} />
+          <Route path='/privacy' element={<PrivacyPolicyPage />} />
+          <Route path='/search' element={<SearchPage />} />
+          <Route path='/feedback' element={<FeedbackPage />} />
+          <Route path='/forums' element={<ForumsPage />} />
+          <Route path='/blog' element={<BlogPage />} />
+          <Route path='/resourceshome' element={<ResourcesHome />} />
 
-          </Routes>
+        </Routes>
       </Router>
     </>
   );
