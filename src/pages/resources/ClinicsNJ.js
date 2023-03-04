@@ -18,8 +18,8 @@ const Posts = tw.div`mt-6 sm:-mr-8 flex flex-wrap`;
 const PostContainer = styled.div`
   ${tw`mt-10 w-full sm:w-1/2 lg:w-1/3 sm:pr-8`}
   ${props =>
-        props.featured &&
-        css`
+    props.featured &&
+    css`
       ${tw`w-full!`}
       ${Post} {
         ${tw`sm:flex-row! h-full sm:pr-4`}
@@ -58,50 +58,72 @@ const ButtonContainer = tw.div`flex justify-center`;
 const LoadMoreButton = tw(PrimaryButton)`mt-16 mx-auto`;
 
 export default ({
-    headingText2 = "New Jersey Clinics and Rehab Centers",
+  headingText2 = "New Jersey Clinics and Rehab Centers",
 }) => {
-    const [visible, setVisible] = useState(7);
-    const onLoadMoreClick = () => {
-        setVisible(v => v + 6);
-    };
-    return (
-        <AnimationRevealPage>
-            <Header />
-            <Container>
-                <ContentWithPaddingLg>
-                    <HeadingRow>
-                        <Heading>{headingText2}</Heading>
-                    </HeadingRow>
-                    <Posts>
-                        <PostContainer featured={true}>
-                            <Post className="group" as="a" href="" target="_blank">
-                                <Image2 imageSrc={""} />
-                                <Info>
-                                    <Category></Category>
-                                    <CreationDate></CreationDate>
-                                    <Title>{"Clinic 1"}</Title>
-                                    <Description>{"Clinic 1 Description."}</Description>
-                                </Info>
-                            </Post>
-                        </PostContainer>
-                        <PostContainer featured={true}>
-                            <Post className="group" as="a" href="" target="_blank">
-                                <Image2 imageSrc={""} />
-                                <Info>
-                                    <Category></Category>
-                                    <CreationDate></CreationDate>
-                                    <Title>{"Clinic 2"}</Title>
-                                    <Description>{"Clinic 2 Description."}</Description>
-                                </Info>
-                            </Post>
-                        </PostContainer>
+  const [visible, setVisible] = useState(7);
+  const onLoadMoreClick = () => {
+    setVisible(v => v + 6);
+  };
+  return (
+    <AnimationRevealPage>
+      <Header />
+      <Container>
+        <ContentWithPaddingLg>
+          <HeadingRow>
+            <Heading>{headingText2}</Heading>
+          </HeadingRow>
+          <Posts>
+            <PostContainer featured={true}>
+              <Post className="group" as="a" href="https://recoverycentersofamerica.com/locations/raritan-bay/" target="_blank">
+                <Image2 imageSrc={"https://www.addictioncenter.com/app/uploads/2022/11/xq23u09Y-e1668635122942.jpeg"} />
+                <Info>
+                  <Category></Category>
+                  <CreationDate></CreationDate>
+                  <Title>{"Recovery Centers of America at Raritan Bay"}</Title>
+                  <Description>{"Conveniently located in South Amboy, New Jersey, Recovery Centers of America at Raritan Bay is a drug and alcohol inpatient treatment facility that serves communities in Northern New Jersey and Southern New York State."}</Description>
+                </Info>
+              </Post>
+            </PostContainer>
+            <PostContainer featured={true}>
+              <Post className="group" as="a" href="https://bocarecoverycenter.com/location/galloway-drug-rehab/" target="_blank">
+                <Image2 imageSrc={"https://www.addictioncenter.com/app/uploads/2020/09/Drug-Rehab-Boca-Recovery-Center.jpeg"} />
+                <Info>
+                  <Category></Category>
+                  <CreationDate></CreationDate>
+                  <Title>{"Boca Recovery Center"}</Title>
+                  <Description>{"Boca Recovery Center in Galloway, New Jersey, offers residential addiction treatment to clients in a beautiful setting. In an immersive treatment setting, clients are able to detox from substances of abuse and begin to build a new life in recovery."}</Description>
+                </Info>
+              </Post>
+            </PostContainer>
+            <PostContainer featured={true}>
+              <Post className="group" as="a" href="https://www.princetondetox.com/" target="_blank">
+                <Image2 imageSrc={"https://www.addictioncenter.com/app/uploads/2022/01/DJI_0938-e1641264715971-1024x573.jpg"} />
+                <Info>
+                  <Category></Category>
+                  <CreationDate></CreationDate>
+                  <Title>{"Princeton Detox & Recovery Center"}</Title>
+                  <Description>{"Clients entering Princeton Detox can expect to be welcomed by a caring staff who fully understand substance use disorder and whose goal is to provide a safe and pain-free detox."}</Description>
+                </Info>
+              </Post>
+            </PostContainer>
+            <PostContainer featured={true}>
+              <Post className="group" as="a" href="https://www.sobanewjersey.com/" target="_blank">
+                <Image2 imageSrc={"https://photos.psychologytoday.com/46625c4b-46cd-11ea-a6ad-06142c356176/1/medium.jpeg"} />
+                <Info>
+                  <Category></Category>
+                  <CreationDate></CreationDate>
+                  <Title>{"SOBA New Jersey"}</Title>
+                  <Description>{"SOBA New Jersey provides comprehensive addiction treatment and mental health services for adults struggling with a wide range of substance use disorders."}</Description>
+                </Info>
+              </Post>
+            </PostContainer>
 
-                    </Posts>
-                </ContentWithPaddingLg>
-            </Container>
-            <Content>
-                <Footer />
-            </Content>
-        </AnimationRevealPage>
-    );
+          </Posts>
+        </ContentWithPaddingLg>
+      </Container>
+      <Content>
+        <Footer />
+      </Content>
+    </AnimationRevealPage>
+  );
 };
