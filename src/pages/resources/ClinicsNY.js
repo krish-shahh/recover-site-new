@@ -18,8 +18,8 @@ const Posts = tw.div`mt-6 sm:-mr-8 flex flex-wrap`;
 const PostContainer = styled.div`
   ${tw`mt-10 w-full sm:w-1/2 lg:w-1/3 sm:pr-8`}
   ${props =>
-        props.featured &&
-        css`
+    props.featured &&
+    css`
       ${tw`w-full!`}
       ${Post} {
         ${tw`sm:flex-row! h-full sm:pr-4`}
@@ -58,50 +58,72 @@ const ButtonContainer = tw.div`flex justify-center`;
 const LoadMoreButton = tw(PrimaryButton)`mt-16 mx-auto`;
 
 export default ({
-    headingText2 = "New York City Clinics and Rehab Centers",
+  headingText2 = "New York City Clinics and Rehab Centers",
 }) => {
-    const [visible, setVisible] = useState(7);
-    const onLoadMoreClick = () => {
-        setVisible(v => v + 6);
-    };
-    return (
-        <AnimationRevealPage>
-            <Header />
-            <Container>
-                <ContentWithPaddingLg>
-                    <HeadingRow>
-                        <Heading>{headingText2}</Heading>
-                    </HeadingRow>
-                    <Posts>
-                        <PostContainer featured={true}>
-                            <Post className="group" as="a" href="" target="_blank">
-                                <Image2 imageSrc={""} />
-                                <Info>
-                                    <Category></Category>
-                                    <CreationDate></CreationDate>
-                                    <Title>{"Clinic 1"}</Title>
-                                    <Description>{"Clinic 1 Description."}</Description>
-                                </Info>
-                            </Post>
-                        </PostContainer>
-                        <PostContainer featured={true}>
-                            <Post className="group" as="a" href="" target="_blank">
-                                <Image2 imageSrc={""} />
-                                <Info>
-                                    <Category></Category>
-                                    <CreationDate></CreationDate>
-                                    <Title>{"Clinic 2"}</Title>
-                                    <Description>{"Clinic 2 Description."}</Description>
-                                </Info>
-                            </Post>
-                        </PostContainer>
+  const [visible, setVisible] = useState(7);
+  const onLoadMoreClick = () => {
+    setVisible(v => v + 6);
+  };
+  return (
+    <AnimationRevealPage>
+      <Header />
+      <Container>
+        <ContentWithPaddingLg>
+          <HeadingRow>
+            <Heading>{headingText2}</Heading>
+          </HeadingRow>
+          <Posts>
+            <PostContainer featured={true}>
+              <Post className="group" as="a" href="https://oasas.ny.gov/location/south-beach-addiction-treatment-center" target="_blank">
+                <Image2 imageSrc={"https://oasas.ny.gov/sites/g/files/oee1061/files/styles/results/public/media/2022/08/south-beach-addiction-treatment-center1.jpg?h=c91c126d&itok=XuGcCdl3"} />
+                <Info>
+                  <Category></Category>
+                  <CreationDate></CreationDate>
+                  <Title>{"South Beach Addiction Treatment Center"}</Title>
+                  <Description>{"South Beach Addiction Treatment Center is a 30-bed facility which provides short-term rehabilitation to adult men and women suffering with addiction. All treatment plans are catered to the individual strengths, needs, and issues of the person in treatment."}</Description>
+                </Info>
+              </Post>
+            </PostContainer>
+            <PostContainer featured={true}>
+              <Post className="group" as="a" href="https://oasas.ny.gov/location/kingsboro-addiction-treatment-center" target="_blank">
+                <Image2 imageSrc={"https://oasas.ny.gov/sites/g/files/oee1061/files/styles/results/public/media/2022/08/kingsboro-4.jpg?h=e6109acc&itok=B0MUSaf2"} />
+                <Info>
+                  <Category></Category>
+                  <CreationDate></CreationDate>
+                  <Title>{"Kingsboro Addiction Treatment Center"}</Title>
+                  <Description>{"Kingsboro is a 70-bed inpatient addiction treatment facility serving adult males and females. Cheerfully decorated patient rooms, recreation areas/outdoor patio, and shared dining room, all play a key role in establishing a positive environment for the recovery process to begin."}</Description>
+                </Info>
+              </Post>
+            </PostContainer>
+            <PostContainer featured={true}>
+              <Post className="group" as="a" href="https://oasas.ny.gov/location/bronx-addiction-treatment-center" target="_blank">
+                <Image2 imageSrc={"https://www.detoxrehabs.net/wp-content/uploads/2023/02/Bronx-Addiction-Treatment-Center-Bronx-New-York.jpg"} />
+                <Info>
+                  <Category></Category>
+                  <CreationDate></CreationDate>
+                  <Title>{"Bronx Addiction Treatment Center"}</Title>
+                  <Description>{"The Bronx Addiction Treatment Center is a 38-bed facility for adult men, women, LGBT, and Spanish monolingual persons. The services provided are designed to address the basic health care needs of each patient while addressing specific physical, psychological and social symptoms associated with psychoactive substance abuse."}</Description>
+                </Info>
+              </Post>
+            </PostContainer>
+            <PostContainer featured={true}>
+              <Post className="group" as="a" href="https://anchorhouseinc.com/" target="_blank">
+                <Image2 imageSrc={"https://norix.com/wp-content/uploads/2020/12/anchor_house1.jpg"} />
+                <Info>
+                  <Category></Category>
+                  <CreationDate></CreationDate>
+                  <Title>{"Anchor House - Brooklyn"}</Title>
+                  <Description>{"Anchor House is a Faith-based Intensive Residential Treatment program Licensed by OASAS (Office of Alcohol and Substance Abuse Services)."}</Description>
+                </Info>
+              </Post>
+            </PostContainer>
 
-                    </Posts>
-                </ContentWithPaddingLg>
-            </Container>
-            <Content>
-                <Footer />
-            </Content>
-        </AnimationRevealPage>
-    );
+          </Posts>
+        </ContentWithPaddingLg>
+      </Container>
+      <Content>
+        <Footer />
+      </Content>
+    </AnimationRevealPage>
+  );
 };

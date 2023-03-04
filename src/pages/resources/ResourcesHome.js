@@ -18,8 +18,8 @@ const Posts = tw.div`mt-6 sm:-mr-8 flex flex-wrap`;
 const PostContainer = styled.div`
   ${tw`mt-10 w-full sm:w-1/2 lg:w-1/3 sm:pr-8`}
   ${props =>
-        props.featured &&
-        css`
+    props.featured &&
+    css`
       ${tw`w-full!`}
       ${Post} {
         ${tw`sm:flex-row! h-full sm:pr-4`}
@@ -60,55 +60,55 @@ const Input = tw.input`p-4 w-full text-xl items-center text-center border-2 bord
 
 
 export default ({
-    headingText = "Web Resources",
-    headingText2 = "Lists of Centers/Clinics By Location",
+  headingText = "Web Resources",
+  headingText2 = "Lists of Centers/Clinics By Location",
 }) => {
-    const [visible, setVisible] = useState(7);
-    const onLoadMoreClick = () => {
-        setVisible(v => v + 6);
-    };
-    const [contacts, setContacts] = useState(clinic_data);
-    const [search, setSearch] = useState('');
-    return (
-        <AnimationRevealPage>
-            <Header />
-            <Container>
-                <ContentWithPaddingLg>
-                    <HeadingRow>
-                        <Heading>
-                            {headingText2}
-                            <Input 
-                                type={"text"}
-                                onChange={(e) => setSearch(e.target.value)}
-                                placeholder='Search by City'
-                            />
-                        </Heading>
-                    </HeadingRow>
-                    {clinic_data.filter((item) => {
-                    return search.toLowerCase() === ''
-                    ? item
-                    : item.city.toLowerCase().includes(search.toLowerCase());
-                })
-                .map((item, index) => (
-                    <Posts>
-                        <PostContainer featured={true} key={index}>
-                            <Post className="group" as="a" href={item.href} target="_blank">
-                                <Image2 imageSrc={item.image} />
-                                <Info>
-                                    <Category></Category>
-                                    <CreationDate></CreationDate>
-                                    <Title>{item.city}</Title>
-                                    <Description>{item.description}</Description>
-                                </Info>
-                            </Post>
-                        </PostContainer>
-                    </Posts>
-                    ))}
-                </ContentWithPaddingLg>
-            </Container>
-            <Content>
-                <Footer />
-            </Content>
-        </AnimationRevealPage>
-    );
+  const [visible, setVisible] = useState(7);
+  const onLoadMoreClick = () => {
+    setVisible(v => v + 6);
+  };
+  const [contacts, setContacts] = useState(clinic_data);
+  const [search, setSearch] = useState('');
+  return (
+    <AnimationRevealPage>
+      <Header />
+      <Container>
+        <ContentWithPaddingLg>
+          <HeadingRow>
+            <Heading>
+              {headingText2}
+              <Input
+                type={"text"}
+                onChange={(e) => setSearch(e.target.value)}
+                placeholder='Search by City or State'
+              />
+            </Heading>
+          </HeadingRow>
+          {clinic_data.filter((item) => {
+            return search.toLowerCase() === ''
+              ? item
+              : item.city.toLowerCase().includes(search.toLowerCase());
+          })
+            .map((item, index) => (
+              <Posts>
+                <PostContainer featured={true} key={index}>
+                  <Post className="group" as="a" href={item.href} target="_blank">
+                    <Image2 imageSrc={item.image} />
+                    <Info>
+                      <Category></Category>
+                      <CreationDate></CreationDate>
+                      <Title>{item.city}</Title>
+                      <Description>{item.description}</Description>
+                    </Info>
+                  </Post>
+                </PostContainer>
+              </Posts>
+            ))}
+        </ContentWithPaddingLg>
+      </Container>
+      <Content>
+        <Footer />
+      </Content>
+    </AnimationRevealPage>
+  );
 };

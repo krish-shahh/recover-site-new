@@ -18,8 +18,8 @@ const Posts = tw.div`mt-6 sm:-mr-8 flex flex-wrap`;
 const PostContainer = styled.div`
   ${tw`mt-10 w-full sm:w-1/2 lg:w-1/3 sm:pr-8`}
   ${props =>
-        props.featured &&
-        css`
+    props.featured &&
+    css`
       ${tw`w-full!`}
       ${Post} {
         ${tw`sm:flex-row! h-full sm:pr-4`}
@@ -58,50 +58,72 @@ const ButtonContainer = tw.div`flex justify-center`;
 const LoadMoreButton = tw(PrimaryButton)`mt-16 mx-auto`;
 
 export default ({
-    headingText2 = "Boston Clinics and Rehab Centers",
+  headingText2 = "Boston Clinics and Rehab Centers",
 }) => {
-    const [visible, setVisible] = useState(7);
-    const onLoadMoreClick = () => {
-        setVisible(v => v + 6);
-    };
-    return (
-        <AnimationRevealPage>
-            <Header />
-            <Container>
-                <ContentWithPaddingLg>
-                    <HeadingRow>
-                        <Heading>{headingText2}</Heading>
-                    </HeadingRow>
-                    <Posts>
-                        <PostContainer featured={true}>
-                            <Post className="group" as="a" href="" target="_blank">
-                                <Image2 imageSrc={""} />
-                                <Info>
-                                    <Category></Category>
-                                    <CreationDate></CreationDate>
-                                    <Title>{"Clinic 1"}</Title>
-                                    <Description>{"Clinic 1 Description."}</Description>
-                                </Info>
-                            </Post>
-                        </PostContainer>
-                        <PostContainer featured={true}>
-                            <Post className="group" as="a" href="" target="_blank">
-                                <Image2 imageSrc={""} />
-                                <Info>
-                                    <Category></Category>
-                                    <CreationDate></CreationDate>
-                                    <Title>{"Clinic 2"}</Title>
-                                    <Description>{"Clinic 2 Description."}</Description>
-                                </Info>
-                            </Post>
-                        </PostContainer>
+  const [visible, setVisible] = useState(7);
+  const onLoadMoreClick = () => {
+    setVisible(v => v + 6);
+  };
+  return (
+    <AnimationRevealPage>
+      <Header />
+      <Container>
+        <ContentWithPaddingLg>
+          <HeadingRow>
+            <Heading>{headingText2}</Heading>
+          </HeadingRow>
+          <Posts>
+            <PostContainer featured={true}>
+              <Post className="group" as="a" href="https://recoverycentersofamerica.com/locations/danvers/" target="_blank">
+                <Image2 imageSrc={"https://recoverycentersofamerica.com/wp-content/uploads/2022/01/danvers-B-1-768x480.jpg.webp"} />
+                <Info>
+                  <Category></Category>
+                  <CreationDate></CreationDate>
+                  <Title>{"Recovery Centers of America at Danvers"}</Title>
+                  <Description>{"Less than 20 miles outside of Boston, in Danvers, Massachusetts, Recovery Centers of America at Danvers is ranked by Newsweek as the second top addiction treatment program in Massachusetts."}</Description>
+                </Info>
+              </Post>
+            </PostContainer>
+            <PostContainer featured={true}>
+              <Post className="group" as="a" href="https://dimock.org/" target="_blank">
+                <Image2 imageSrc={"https://www.timberlineconstruction.com/wp-content/uploads/construction_management_mass_healthcare_DimockATC1-1280x853.jpg"} />
+                <Info>
+                  <Category></Category>
+                  <CreationDate></CreationDate>
+                  <Title>{"The Dimock Center"}</Title>
+                  <Description>{"Dimock provides outpatient services for adults recovering from substance use disorders. Masters Level Clinicians, Licensed Social Workers, and Psychiatrists from the programs’ clinical team which helps clients fully regain their lives and their well-being."}</Description>
+                </Info>
+              </Post>
+            </PostContainer>
+            <PostContainer featured={true}>
+              <Post className="group" as="a" href="https://www.greaterbostonaddictioncenters.com/" target="_blank">
+                <Image2 imageSrc={"https://chambermaster.blob.core.windows.net/images/customers/2080/members/255412/photos/GALLERY_MAIN/GBAC_Move_Forward_logo.jpg"} />
+                <Info>
+                  <Category></Category>
+                  <CreationDate></CreationDate>
+                  <Title>{"Greater Boston Addiction Center"}</Title>
+                  <Description>{"Greater Boston Addiction Centers is a progressive new drug rehab program located in Needham, MA. About 30 minutes west of downtown Boston, its drug treatment programs offer hope, resources, and mental health counseling to people who are struggling with addiction."}</Description>
+                </Info>
+              </Post>
+            </PostContainer>
+            <PostContainer featured={true}>
+              <Post className="group" as="a" href="https://www.newenglandrecoverycenter.org/" target="_blank">
+                <Image2 imageSrc={"https://www.newenglandrecoverycenter.org/blog/day-life-new-england-recovery-center/giblinhouse-396-2/"} />
+                <Info>
+                  <Category></Category>
+                  <CreationDate></CreationDate>
+                  <Title>{"New England Recovery Center"}</Title>
+                  <Description>{"NERC / Spectrum has grown to offer the largest and most comprehensive continuum of care in the region including inpatient detoxification, residential treatment, an array of outpatient services, medication-assisted treatment and peer recovery support. Today, Spectrum serves more than 5,000 individuals across the state each day."}</Description>
+                </Info>
+              </Post>
+            </PostContainer>
 
-                    </Posts>
-                </ContentWithPaddingLg>
-            </Container>
-            <Content>
-                <Footer />
-            </Content>
-        </AnimationRevealPage>
-    );
+          </Posts>
+        </ContentWithPaddingLg>
+      </Container>
+      <Content>
+        <Footer />
+      </Content>
+    </AnimationRevealPage>
+  );
 };
