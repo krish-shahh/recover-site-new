@@ -109,7 +109,7 @@ export default ({
                       </Meta>
                     </MetaContainer>
                     <Description>{item.description}</Description>
-                    <Link href={item.url} target="_blank">Read Post</Link>
+                    <Link href={item.url} target="_blank">Learn More</Link>
                   </Details>
                 </Card>
               </Column>
