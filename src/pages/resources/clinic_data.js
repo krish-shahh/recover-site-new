@@ -1,0 +1,4 @@
+export const clinic_data = [{"id":1,"city":"Greater Boston","description":"Click here for a list of trusted clinics and rehab centers in the Greater Boston Area.","image":"https://bdc2020.o0bc.com/wp-content/uploads/2022/03/Boston-Harbor-scaled-1-6307fa615b6ba.jpg", "href": "/resourcesboston"},
+{"id":2,"city":"New York City","description":"Click here for a list of trusted clinics and rehab centers in New York City.","image":"https://i.natgeofe.com/n/874df281-d3e0-489a-98c0-6b840023b828/newyork_NationalGeographic_2328428_2x1.jpg", "href": "/resourcesny"},
+{"id":3,"city":"New Jersey","description":"Click here for a list of trusted clinics and rehab centers in New Jersey.","image":"https://cdn.britannica.com/40/124040-050-1C958F63/Jersey-City-NJ.jpg", "href": "/resourcesnj"}
+];

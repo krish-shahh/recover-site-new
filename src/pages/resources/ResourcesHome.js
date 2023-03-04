@@ -9,7 +9,7 @@ import Footer from "components/footers/SimpleFiveColumn";
 import { SectionHeading } from "components/misc/Headings";
 import { PrimaryButton } from "components/misc/Buttons";
 import SearchForm from "../../components/features/DashedBorderSixFeatures";
-
+import { clinic_data } from "./clinic_data.js"
 
 const HeadingRow = tw.div`flex`;
 const Content = tw.div`max-w-screen-xl mx-auto`;
@@ -56,6 +56,8 @@ const Description = tw.div``;
 
 const ButtonContainer = tw.div`flex justify-center`;
 const LoadMoreButton = tw(PrimaryButton)`mt-16 mx-auto`;
+const Input = tw.input`p-4 w-full text-xl items-center text-center border-2 border-red-700 rounded-md font-black`;
+
 
 export default ({
     headingText = "Web Resources",
@@ -65,49 +67,43 @@ export default ({
     const onLoadMoreClick = () => {
         setVisible(v => v + 6);
     };
+    const [contacts, setContacts] = useState(clinic_data);
+    const [search, setSearch] = useState('');
     return (
         <AnimationRevealPage>
             <Header />
             <Container>
                 <ContentWithPaddingLg>
                     <HeadingRow>
-                        <Heading>{headingText2}</Heading>
+                        <Heading>
+                            {headingText2}
+                            <Input 
+                                type={"text"}
+                                onChange={(e) => setSearch(e.target.value)}
+                                placeholder='Search by City'
+                            />
+                        </Heading>
                     </HeadingRow>
+                    {clinic_data.filter((item) => {
+                    return search.toLowerCase() === ''
+                    ? item
+                    : item.city.toLowerCase().includes(search.toLowerCase());
+                })
+                .map((item, index) => (
                     <Posts>
-                        <PostContainer featured={true}>
-                            <Post className="group" as="a" href="/resourcesboston" target="_blank">
-                                <Image2 imageSrc={"https://bdc2020.o0bc.com/wp-content/uploads/2022/03/Boston-Harbor-scaled-1-6307fa615b6ba.jpg"} />
+                        <PostContainer featured={true} key={index}>
+                            <Post className="group" as="a" href={item.href} target="_blank">
+                                <Image2 imageSrc={item.image} />
                                 <Info>
                                     <Category></Category>
                                     <CreationDate></CreationDate>
-                                    <Title>{"Greater Boston"}</Title>
-                                    <Description>{"Click here for a list of trusted clinics and rehab centers in the Greater Boston Area."}</Description>
-                                </Info>
-                            </Post>
-                        </PostContainer>
-                        <PostContainer featured={true}>
-                            <Post className="group" as="a" href="/resourcesny" target="_blank">
-                                <Image2 imageSrc={"https://i.natgeofe.com/n/874df281-d3e0-489a-98c0-6b840023b828/newyork_NationalGeographic_2328428_2x1.jpg"} />
-                                <Info>
-                                    <Category></Category>
-                                    <CreationDate></CreationDate>
-                                    <Title>{"New York City"}</Title>
-                                    <Description>{"Click here for a list of trusted clinics and rehab centers in New York City."}</Description>
-                                </Info>
-                            </Post>
-                        </PostContainer>
-                        <PostContainer featured={true}>
-                            <Post className="group" as="a" href="/resourcesnj" target="_blank">
-                                <Image2 imageSrc={"https://cdn.britannica.com/40/124040-050-1C958F63/Jersey-City-NJ.jpg"} />
-                                <Info>
-                                    <Category></Category>
-                                    <CreationDate></CreationDate>
-                                    <Title>{"New Jersey"}</Title>
-                                    <Description>{"Click here for a list of trusted clinics and rehab centers in New Jersey."}</Description>
+                                    <Title>{item.city}</Title>
+                                    <Description>{item.description}</Description>
                                 </Info>
                             </Post>
                         </PostContainer>
                     </Posts>
+                    ))}
                 </ContentWithPaddingLg>
             </Container>
             <Content>
