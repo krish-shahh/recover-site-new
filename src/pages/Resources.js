@@ -133,7 +133,7 @@ export default ({
                     </HeadingRow>
                     <Posts>
                         <PostContainer featured={true}>
-                            <Post className="group" as="a" href="/resourceshome" target="_blank">
+                            <Post className="group" as="a" href="/resourceshome">
                                 <Image imageSrc={"https://www.logodesignlove.com/wp-content/uploads/2011/10/red-cross-logo.jpg"} />
                                 <Info>
                                     <Category></Category>

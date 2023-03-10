@@ -92,7 +92,7 @@ export default ({
             .map((item, index) => (
               <Posts>
                 <PostContainer featured={true} key={index}>
-                  <Post className="group" as="a" href={item.href} target="_blank">
+                  <Post className="group" as="a" href={item.href}>
                     <Image2 imageSrc={item.image} />
                     <Info>
                       <Category></Category>
