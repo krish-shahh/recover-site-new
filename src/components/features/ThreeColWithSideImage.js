@@ -76,28 +76,38 @@ export default ({ cards = null, heading = "Amazing Features", subheading = "Feat
     { 
       imageSrc: MoneyIcon, 
       title: "Free",
-      description: "Our services will always be completely free of charge, to ensure that anyone in need can access the support they need to begin their journey to recovery." 
+      description: "Our services will always be completely free of charge, to ensure that anyone in need can access the support they need to begin their journey to recovery.", 
     },
     {
       imageSrc: SearchIcon,
       title: "Search",
-      description: "We have created a search feature that allows individuals to find and connect with potential sponsors who match their specific needs and preferences."
+      description: "We have created a search feature that allows individuals to find and connect with potential sponsors who match their specific needs and preferences.",
+      href: "/search",
+      target: "_self"
     },
     { imageSrc: EventIcon, 
       title: "Events",
-      description: "We have created an event listing feature that allows our users to easily find and connect with sober events in their local area and beyond." 
+      description: "We have created an event listing feature that allows our users to easily find and connect with sober events in their local area and beyond.",
+      href: "/events",
+      target: "_self"
     },
     { imageSrc: HeartIcon, 
       title: "Resources",
-      description: "We have created a self-guided resource page that provides a wide range of information, tools, and support, that users can access at their own pace and on their own terms, to help them navigate the recovery process." 
+      description: "We have created a self-guided resource page that provides a wide range of information, tools, and support, that users can access at their own pace and on their own terms, to help them navigate the recovery process.", 
+      href: "/resources",
+      target: "_self"
     },
     { imageSrc: LinkIcon, 
       title: "Connection",
-      description: "By fostering a community of support and understanding, we believe that we can empower individuals to find the strength and resilience they need to overcome addiction and achieve lasting recovery."
+      description: "By fostering a community of support and understanding, we believe that we can empower individuals to find the strength and resilience they need to overcome addiction and achieve lasting recovery.",
+      href: "/forums",
+      target: "_self"
     },
     { imageSrc: SimpleIconImage, 
-      title: "User-Oriented",
-      description: "Through a user-oriented approach, we strive to create a platform that is accessible, personalized, and responsive to the unique needs and challenges of each individual in recovery." 
+      title: "Artificial Intelligence",
+      description: "Through a user-oriented approach, we strive to create a platform that is accessible, personalized, and responsive to the unique needs and challenges of each individual in recovery.", 
+      href: "https://recover-ai.vercel.app/",
+      target: "_blank"
     }
   ];
 
@@ -112,7 +122,9 @@ export default ({ cards = null, heading = "Amazing Features", subheading = "Feat
           <Column key={i}>
             <Card>
               <span className="imageContainer">
+                <a href={card.href} target={card.target}>
                 <img src={card.imageSrc || defaultCardImage} alt="" />
+                </a>
               </span>
               <span className="textContainer">
                 <span className="title">{card.title}</span>
