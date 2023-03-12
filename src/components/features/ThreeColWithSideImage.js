@@ -105,7 +105,7 @@ export default ({ cards = null, heading = "Amazing Features", subheading = "Feat
     },
     { imageSrc: SimpleIconImage, 
       title: "Artificial Intelligence",
-      description: "Through a user-oriented approach, we strive to create a platform that is accessible, personalized, and responsive to the unique needs and challenges of each individual in recovery.", 
+      description: "ReCover AI utilizes the power of GPT-3.5 API to address the answers to any of your questions or thoughts about addiction and the addiction recovery process.", 
       href: "https://recover-ai.vercel.app/",
       target: "_blank"
     }
