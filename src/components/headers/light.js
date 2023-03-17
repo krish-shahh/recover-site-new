@@ -96,7 +96,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
       <NavLink href="/events">
         Events
       </NavLink>
-      <NavLink href="https://recover-ai.vercel.app/" target="_blank">
+      <NavLink href="/ai">
         AI
       </NavLink>
       <NavLink href="/forums">

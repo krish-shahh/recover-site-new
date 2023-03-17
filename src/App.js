@@ -105,6 +105,7 @@ import PrivacyPolicyPage from "pages/PrivacyPolicy.js";
 import SearchPage from "pages/Search.js"
 import FeedbackPage from "pages/Feedback.js"
 import BlogPage from "pages/Blog.js"
+import AIPage from "pages/AIPage";
 
 import TestEventsPage from "pages/TestEvents.js"
 
@@ -112,7 +113,7 @@ import ComponentRenderer from "ComponentRenderer.js";
 import MainLandingPage from "MainLandingPage.js";
 import ThankYouPage from "ThankYouPage.js";
 
-//RESORUCES
+//RESOURCES
 import ResourcesHome from "pages/resources/ResourcesHome.js";
 import ClinicsBoston from "pages/resources/ClinicsBoston.js";
 import ClinicsNJ from "pages/resources/ClinicsNJ.js";
@@ -142,6 +143,7 @@ export default function App() {
           <Route path='/search' element={<SearchPage />} />
           <Route path='/feedback' element={<FeedbackPage />} />
           <Route path='/forums' element={<ForumsPage />} />
+          <Route path='/ai' element={<AIPage />} />
           <Route path='/blog' element={<BlogPage />} />
           <Route path='/resourceshome' element={<ResourcesHome />} />
           <Route path='/resourcesboston' element={<ClinicsBoston />} />

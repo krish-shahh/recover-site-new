@@ -78,7 +78,7 @@ export default () => {
               <Link href="/privacy">Privacy Policy</Link>
             </LinkListItem>
             <LinkListItem>
-              <Link href=" " target="_blank">Treatment</Link>
+              <Link href="/ai">AI</Link>
             </LinkListItem>
           </LinkList>
         </Column>
